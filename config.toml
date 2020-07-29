@@ -1,9 +1,9 @@
-baseURL = "http://krähenbeißer.de/"
+baseURL = "https://krähenbeisser.de/"
 languageCode = "de-de"
 defaultContentLanguage = "de"
 title = "Krähenbeißer"
 theme = "aether"
-disableKinds = ["term"]
+disableKinds = ["term", "taxonomy"]
 publishDir = "docs"
 #canonifyurls = true
 #paginate = 3
@@ -11,6 +11,9 @@ publishDir = "docs"
 [params]
 brand = "Krähenbeißer"
 description = "Historische Abbildungen von Krähenbeißern"
-homeimg = ""
-bgimg = "exampleSite/img/ignasi_pattern_s.png"
+#homeimg = ""
+bgimg = "images/bg.png"
 rssinmenu = true
+
+[taxonomies]
+Buch = "books"

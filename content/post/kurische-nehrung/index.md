@@ -1,5 +1,5 @@
 ---
-title: "Kurische Nehrung"
+title: "Die Kurische Nehrung"
 description:
 date: 2020-07-29T10:22:44+02:00
 draft: true
@@ -13,3 +13,5 @@ resources:
   params:
     description: "Buchdeckel"
 ---
+
+![Titelseite](title.jpeg)
