@@ -4,6 +4,7 @@ defaultContentLanguage = "de"
 title = "Krähenbeißer"
 theme = "aether"
 disableKinds = ["term"]
+publishDir = "docs"
 #canonifyurls = true
 #paginate = 3
 
