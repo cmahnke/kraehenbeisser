@@ -1,0 +1,15 @@
+baseURL = "http://krähenbeißer.de/"
+languageCode = "de-de"
+defaultContentLanguage = "de"
+title = "Krähenbeißer"
+theme = "aether"
+disableKinds = ["term"]
+#canonifyurls = true
+#paginate = 3
+
+[params]
+brand = "Krähenbeißer"
+description = "Historische Abbildungen von Krähenbeißern"
+homeimg = ""
+bgimg = "exampleSite/img/ignasi_pattern_s.png"
+rssinmenu = true
