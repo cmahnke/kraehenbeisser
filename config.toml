@@ -13,6 +13,7 @@ brand = "Krähenbeißer"
 description = "Historische Abbildungen von Krähenbeißern"
 #homeimg = ""
 bgimg = "images/bg.png"
+errorimg = "images/kraehenbeisser.svg"
 rssinmenu = true
 
 [taxonomies]
