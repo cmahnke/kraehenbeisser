@@ -7,18 +7,32 @@
       <article class="post {{ if ne .Params.dropcap false }}dropcase{{ end }}">
         <header class="post-header">
           <h1 class="post-title">{{ .Title }}</h1>
-          {{ if isset .Params "date" }}<p class="post-date">Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>{{ end }}
         </header>
         {{ with .Resources.GetMatch "featuredImage" -}}
-        <picture class="post-figure">
+        <div class="image-header">
+        <figure class="post front">
           {{ with $.Resources.GetMatch (replace (.Title) (path.Ext (.Title)) ".webp") -}}
           <source srcset="{{ .Permalink }}" type="image/webp">
           {{- end }}
-          {{ $featured := .Resize "800x Lanczos" }}
+          {{ $featured := .Resize "400x Lanczos" }}
           <source srcset="{{ $featured.Permalink }}">
           <img src="{{ $featured.Permalink }}" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
-        </picture>
+          <figcaption><a href="{{.Permalink}}">Download</a> full resolution image</figcaption>
+        </figure>
         {{- end }}
+        {{ with .Resources.GetMatch "titleImage" -}}
+        <figure class="post title">
+          {{ with $.Resources.GetMatch (replace (.Title) (path.Ext (.Title)) ".webp") -}}
+          <source srcset="{{ .Permalink }}" type="image/webp">
+          {{- end }}
+          {{ $title := .Resize "400x Lanczos" }}
+          <source srcset="{{ $title.Permalink }}">
+          <img src="{{ $title.Permalink }}" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
+          <figcaption><a href="{{.Permalink}}">Download</a> full resolution image</figcaption>
+        </figure>
+        </div>
+        {{- end }}
+        <p class="post-reference">{{ .Description }}</p>
         {{ if .Params.toc -}}
           <h2>Contents</h2>
           {{ .TableOfContents }}

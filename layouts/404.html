@@ -2,13 +2,14 @@
 <html lang="{{ .Site.LanguageCode }}" dir="ltr">
   {{ partial "head.html" . }}
     <main id="main">
-      <div>
-       <h1 class="error404"><a href="{{ "/" | relURL }}">404 Seite nicht gefunden!</a></h1>
-      </div>
-      {{ with resources.Get .Site.Params.errorimg -}}
       <div class="error404">
-        <img src="{{ .Permalink }}" alt="Diese Seite hat der Krähenbeißer gebissen!"/>
-      </div>
+       <h1>
+           <a href="{{ "/" | relURL }}">404 Seite nicht gefunden!</a>
+       </h1>
+      {{ if .Site.Params.errorimg -}}
+          {{ with resources.Get .Site.Params.errorimg -}}
+            <img src="{{ .Permalink }}" alt="Diese Seite hat der Krähenbeißer gebissen!"/>
+          {{- end }}
       {{- end }}
     </main>
     {{ partial "scripts.html" . }}

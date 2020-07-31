@@ -17,6 +17,10 @@ Diese Seite ist eine Sammlung historischer Abbildungen von Krähenbeißern, aus 
 
 * [Krähenbeißer in der deutschen Wikipedia](https://de.wikipedia.org/wiki/Kr%C3%A4henbei%C3%9Fer)
 
+## Literatur
+
+* Tautorat, Hans-Georg, 1994. Rossitten. Nachdruck, 1994 [der Ausg. Hamburg 1978]. Hamburg: Landsmannschaft Ostpreußen
+
 
 # Meine anderen Blogs
 

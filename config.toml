@@ -10,6 +10,7 @@ publishDir = "docs"
 
 [params]
 brand = "Krähenbeißer"
+#brand_logo = "images/kraehenbeisser.svg"
 description = "Historische Abbildungen von Krähenbeißern"
 #homeimg = ""
 bgimg = "images/bg.png"
@@ -18,3 +19,8 @@ rssinmenu = true
 
 [taxonomies]
 Buch = "books"
+
+[module]
+[[module.mounts]]
+source = "../node_modules/tify/dist"
+target = "assets/js/tify"

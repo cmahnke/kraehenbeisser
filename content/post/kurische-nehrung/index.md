@@ -1,8 +1,8 @@
 ---
 title: "Die Kurische Nehrung"
-description:
+description: "Brust, Alfred, 1930. Die Kurische Nehrung: Eine Monographie in Bildern. 1. Auflage, 1.-5. Tausend - Königsberg in Preußen: Gräfe & Unzer"
 date: 2020-07-29T10:22:44+02:00
-draft: true
+draft: false
 displayInMenu: false
 displayInList: true
 categories: ["Buch"]
@@ -12,6 +12,8 @@ resources:
   src: "front.jpeg"
   params:
     description: "Buchdeckel"
+- name: titleImage
+  src: "title.jpeg"
+  params:
+    description: "Titelseite"
 ---
-
-![Titelseite](title.jpeg)

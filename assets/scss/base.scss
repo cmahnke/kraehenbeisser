@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav, main {
+    width: 80%;
+}
+
+h1, h2, h3 {
+    font-family: 'DS Behrensschrift';
+}
+
+nav img {
+    display: inline-block;
+    margin: 0 0.1em;
+    height: 2em;
+    width: auto;
+}
+
+.post-title, .card-title, .list-header-title, .nav-header .nav-text  {
+    font-family: 'DS Behrensschrift';
+    font-weight: normal;
+}
+
+.list-header-title {
+    text-transform: capitalize;
+}
+
+.nav-header .nav-text {
+    text-decoration: none;
+    z-index: 105;
+    font-size: .8em;
+}
+
+.error404 {
+    margin: auto;
+    width: 60%;
+
+    h1 {
+        padding-top: 1em;
+        text-decoration: none;
+        text-align: center;
+        padding-bottom: 2em;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    img {
+      max-width:100%;
+      height:auto;
+      width: inherit;
+      margin: auto;
+    }
+}
+
+.post-reference {
+    font-size: smaller;
+}
+
+.image-header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2em;
+
+    figure.post {
+        display: inline-block;
+        width: 40%;
+
+        img {
+            display: inline;
+            margin-bottom:0.1em;
+        }
+
+        figcaption {
+            text-align: end;
+            font-size: small;
+            line-height: normal;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
