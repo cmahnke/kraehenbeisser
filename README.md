@@ -31,12 +31,22 @@ You can use [`svgo`](https://github.com/svg/svgo) to optimize SVG files exported
 yarn run svgo
 ````
 
-## IIIF static generator
+## Install IIIF static generator
 
 To generate IIIF manifests for posts you need the [`iiif_static.py`](https://github.com/zimeon/iiif/tree/master/demo-static) tool, you need the [Python IIIF module](https://github.com/zimeon/iiif).
 
 ````
 pip install iiif
+````
+
+### Genratic static IIIF tiles
+
+````
+cd static
+mkdir iiif
+cd images
+iiif_static.py -d ../iiif rossitten-33.jpeg rossitten-34.jpeg
+iiif_static.py  -d ../iiif kurische-nehrung-58.jpeg kurische-nehrung-59.jpeg kurische-nehrung-60.jpeg
 ````
 
 ## Dumping MARC records

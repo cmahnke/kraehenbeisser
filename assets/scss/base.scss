@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -17,6 +19,12 @@ nav img {
     height: 2em;
     width: auto;
 }
+
+/*
+img {
+    object-fit: contain;
+}
+*/
 
 .post-title, .card-title, .list-header-title, .nav-header .nav-text  {
     font-family: 'DS Behrensschrift';

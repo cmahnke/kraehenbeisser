@@ -1,11 +1,9 @@
 @font-face {
   font-family: 'DS Behrensschrift';
-  src: url('../font/DS Behrensschrift.otf') format('woff'),
-       url('../font/DS Behrensschrift.ttf')  format('truetype');
+  src: url('../font/DSBehrensschrift.otf') format('woff'),
+       url('../font/DSBehrensschrift.ttf')  format('truetype');
   font-style: normal;
   font-weight: normal;
   font-display: swap;
   text-rendering: optimizeLegibility;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
