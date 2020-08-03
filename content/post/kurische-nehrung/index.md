@@ -16,4 +16,7 @@ resources:
   src: "title.jpeg"
   params:
     description: "Titelseite"
+iiif:
+- manifest: "iiif/kurische-nehrung-58/info.json"
+- manifest: "iiif/kurische-nehrung-59/info.json"
 ---

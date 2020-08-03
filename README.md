@@ -39,12 +39,10 @@ To generate IIIF manifests for posts you need the [`iiif_static.py`](https://git
 pip install iiif
 ````
 
-### Genratic static IIIF tiles
+### Generating static IIIF tiles
 
 ````
-cd static
-mkdir iiif
-cd images
+cd static/images
 iiif_static.py -d ../iiif rossitten-33.jpeg rossitten-34.jpeg
 iiif_static.py  -d ../iiif kurische-nehrung-58.jpeg kurische-nehrung-59.jpeg kurische-nehrung-60.jpeg
 ````
@@ -58,4 +56,10 @@ iiif_static.py  -d ../iiif kurische-nehrung-58.jpeg kurische-nehrung-59.jpeg kur
 
 ````
 hugo server -D --debug --disableFastRender
+````
+
+# Using Docker
+
+````
+DOCKER_BUILDKIT=1 docker build .
 ````

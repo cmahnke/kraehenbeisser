@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import "js/tify/tify.css"
 
+@font-face {
+  font-family: 'DS Behrensschrift';
+  src: url('../font/DSBehrensschrift.otf') format('woff'),
+       url('../font/DSBehrensschrift.ttf')  format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
 
 body {
     font-family: 'Nunito Sans', sans-serif;

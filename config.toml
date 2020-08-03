@@ -9,18 +9,26 @@ publishDir = "docs"
 #paginate = 3
 
 [params]
-brand = "Krähenbeißer"
-#brand_logo = "images/kraehenbeisser.svg"
-description = "Historische Abbildungen von Krähenbeißern"
-#homeimg = ""
-bgimg = "images/bg.png"
-errorimg = "images/kraehenbeisser.svg"
-rssinmenu = true
+  brand = "Krähenbeißer"
+  #brand_logo = "images/kraehenbeisser.svg"
+  description = "Historische Abbildungen von Krähenbeißern"
+  #homeimg = ""
+  bgimg = "images/bg.png"
+  errorimg = "images/kraehenbeisser.svg"
+  rssinmenu = true
 
-[taxonomies]
-Buch = "books"
+#[taxonomies]
+#  Buch = "books"
 
 [module]
-[[module.mounts]]
-source = "../node_modules/tify/dist"
-target = "assets/js/tify"
+  [[module.mounts]]
+    source = "node_modules/tify/dist"
+    target = "assets/js/tify"
+
+  [[module.mounts]]
+    source = "assets/scss"
+    target = "assets/scss"
+
+  [[module.mounts]]
+    source = "assets/images"
+    target = "assets/images"
