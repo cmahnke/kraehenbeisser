@@ -29,11 +29,29 @@ nav img {
     width: auto;
 }
 
-/*
 img {
-    object-fit: contain;
+    height: auto !important;
 }
-*/
+
+.card-img-container {
+    order: 2;
+}
+.card-body {
+    order: 1;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .card-img-container {
+        order: 1;
+    }
+    .card-body {
+        order: 2;
+    }
+}
+
+.card-img {
+    max-height: unset;
+}
 
 .post-title, .card-title, .list-header-title, .nav-header .nav-text  {
     font-family: 'DS Behrensschrift';

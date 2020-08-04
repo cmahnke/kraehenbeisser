@@ -28,9 +28,8 @@
   {{ $leafletStyle := resources.Get "js/leaflet/leaflet.css" }}
   {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed") }}
   {{ $scssStyle := resources.Get "scss/base.scss" | toCSS $options }}
-  {{ $style := slice $mainStyle $leafletStyle $overrideStyle | resources.Concat "css/concated.css" | minify }}
+  {{ $style := slice $mainStyle $leafletStyle $overrideStyle $scssStyle | resources.Concat "css/concated.css" | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
-  <link href="{{ $scssStyle.RelPermalink }}" rel="stylesheet">
 
   {{ $leafletLib := resources.Get "js/leaflet/leaflet.js" }}
   {{ $leafletIiifLib := resources.Get "js/leaflet-iiif/leaflet-iiif.js" }}
