@@ -25,14 +25,14 @@ jobs:
       - name: Generate Tiles
         run: |
           cd static/images
-          iiif_static.py -d ../iiif rossitten-33.jpeg rossitten-34.jpeg
-          iiif_static.py  -d ../iiif kurische-nehrung-58.jpeg kurische-nehrung-59.jpeg kurische-nehrung-60.jpeg
+          iiif_static.py -d ../../content/post/rossitten rossitten-33.jpeg rossitten-34.jpeg
+          iiif_static.py  -d ../../content/post/kurische-nehrung kurische-nehrung-59.jpeg kurische-nehrung-60.jpeg
 
-      - name: Use Node.js 10.22.0
+      - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 10.22.0
-      - name: Install dependencies
+      - name: Install Node dependencies
         run: |
           yarn install
           yarn run svgo
@@ -42,10 +42,10 @@ jobs:
         with:
           hugo-version: '0.74.3'
           extended: true
-      - name: Build
+      - name: Build Hugo site
         run: hugo
 
-      - name: Deploy
+      - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

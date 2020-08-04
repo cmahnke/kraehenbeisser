@@ -16,7 +16,11 @@ resources:
   src: "title.jpeg"
   params:
     description: "Titelseite"
-iiif:
-- manifest: "iiif/kurische-nehrung-58/info.json"
-- manifest: "iiif/kurische-nehrung-59/info.json"
+- src: "iiif/kurische-nehrung-58/info.json"
+- src: "iiif/kurische-nehrung-59/info.json"
+- src: "iiif/kurische-nehrung-60/info.json"
+- name: iiif-manifest-:counter
+  params:
+    tify: true
+  src: '**.json'
 ---

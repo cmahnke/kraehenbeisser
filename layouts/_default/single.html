@@ -28,10 +28,13 @@
           {{ $title := .Resize "400x Lanczos" }}
           <source srcset="{{ $title.Permalink }}">
           <img src="{{ $title.Permalink }}" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
-          <figcaption><a href="{{.Permalink}}">Download</a> full resolution image</figcaption>
+          <figcaption>Volle Auflösung <a href="{{.Permalink}}">herunterladen</a></figcaption>
         </figure>
         </div>
         {{- end }}
+
+        {{ partial "iiif-image.html" . }}
+
         <p class="post-reference">{{ .Description }}</p>
         {{ if .Params.toc -}}
           <h2>Contents</h2>

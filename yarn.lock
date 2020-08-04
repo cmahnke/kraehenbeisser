@@ -771,6 +771,16 @@ keyv@3.0.0:
   dependencies:
     json-buffer "3.0.0"
 
+leaflet-iiif@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/leaflet-iiif/-/leaflet-iiif-3.0.0.tgz#c8b80b01362df8a9c071ed7ad4b0b0d142c73df9"
+  integrity sha512-WWejon+vWaJUPe4Lp/AidYMosyy82bU/OjVgHQCTUojFWaUxzs00Ao6pSd42EYw45S8SW2Drc4VsMb3sxSNUMQ==
+
+leaflet@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.6.0.tgz#aecbb044b949ec29469eeb31c77a88e2f448f308"
+  integrity sha512-CPkhyqWUKZKFJ6K8umN5/D2wrJ2+/8UIpXppY7QDnUZW5bZL5+SEI2J7GBpwh4LIupOKqbNSQXgqmrEJopHVNQ==
+
 lowercase-keys@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
@@ -1231,11 +1241,6 @@ through@^2.3.8:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
-
-tify@^0.23.1:
-  version "0.23.1"
-  resolved "https://registry.yarnpkg.com/tify/-/tify-0.23.1.tgz#479e9e810c04aaaa0af0463abc7d240d5b001259"
-  integrity sha512-ec4nkTDOU0ztbsH36nI8Uhafqa6NV49sK+MOV/u/Dxc/icw/jDgofwMNkUmma3QvZ2r4Pw1/k4H2WYX1bAOsZQ==
 
 timed-out@^4.0.1:
   version "4.0.1"

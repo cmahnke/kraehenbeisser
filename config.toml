@@ -5,7 +5,7 @@ title = "Krähenbeißer"
 theme = "aether"
 disableKinds = ["term", "taxonomy"]
 publishDir = "docs"
-#canonifyurls = true
+canonifyurls = true
 #paginate = 3
 
 [params]
@@ -22,8 +22,12 @@ publishDir = "docs"
 
 [module]
   [[module.mounts]]
-    source = "node_modules/tify/dist"
-    target = "assets/js/tify"
+    source = "node_modules/leaflet/dist"
+    target = "assets/js/leaflet"
+
+  [[module.mounts]]
+    source = "node_modules/leaflet-iiif"
+    target = "assets/js/leaflet-iiif"
 
   [[module.mounts]]
     source = "assets/scss"
@@ -32,3 +36,7 @@ publishDir = "docs"
   [[module.mounts]]
     source = "assets/images"
     target = "assets/images"
+
+  [[module.mounts]]
+    source = "node_modules/leaflet/dist/images"
+    target = "assets/images/leaflet"
