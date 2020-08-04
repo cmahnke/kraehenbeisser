@@ -17,7 +17,7 @@
           {{ $featured := .Resize "400x Lanczos" }}
           <source srcset="{{ $featured.Permalink }}">
           <img src="{{ $featured.Permalink }}" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
-          <figcaption><a href="{{.Permalink}}">Download</a> full resolution image</figcaption>
+          <figcaption>Volle Auflösung <a href="{{.Permalink}}">herunterladen</a></figcaption>
         </figure>
         {{- end }}
         {{ with .Resources.GetMatch "titleImage" -}}
