@@ -1,7 +1,7 @@
 #!/bin/bash
 # Taken from https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
-rm -rf docs/*
+rm -rf docs/* resources
 
 pip install iiif
 WD=`pwd`
