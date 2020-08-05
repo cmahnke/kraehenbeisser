@@ -40,6 +40,10 @@ img {
     order: 1;
 }
 
+.next-card .card-img {
+    width: 100%;
+}
+
 @media only screen and (min-width: 40.063em) {
     .card-img-container {
         order: 1;
@@ -47,10 +51,19 @@ img {
     .card-body {
         order: 2;
     }
+
+    .next-card .card-img {
+        width: unset;
+    }
+
 }
 
 .card-img {
     max-height: unset;
+}
+
+.card-img-overlay {
+    padding: 1em 0.7em;
 }
 
 .post-title, .card-title, .list-header-title, .nav-header .nav-text  {
@@ -70,13 +83,14 @@ img {
 
 .error404 {
     margin: auto;
-    width: 60%;
+    width: 95%;
 
     h1 {
         padding-top: 1em;
         text-decoration: none;
         text-align: center;
         padding-bottom: 2em;
+        font-size: xxx-large;
 
         a {
             text-decoration: none;
@@ -84,15 +98,23 @@ img {
     }
 
     img {
-      max-width:100%;
-      height:auto;
-      width: inherit;
-      margin: auto;
+          width: 80%;
+          margin: auto;
     }
+
+    @media only screen and (min-width: 40.063em) {
+        img {
+              width: 35%;
+        }
+    }
+
 }
 
 .post-reference {
     font-size: smaller;
+    padding-left: 3em;
+    margin-top: 12px;
+    margin-bottom: 36px;
 }
 
 // IIIF viewer
@@ -132,4 +154,32 @@ img {
             }
         }
     }
+}
+
+
+// Leaflet fullscreen
+.fullscreen-icon {
+    {{ $leafletFullscreenIcon := resources.Get "js/leaflet.fullscreen/icon-fullscreen.png" }}
+    background-image: url({{ $leafletFullscreenIcon.RelPermalink }})
+}
+
+.leaflet-retina .fullscreen-icon {
+    {{ $leafletFullscreenIconRetina := resources.Get "js/leaflet.fullscreen/icon-fullscreen.png" }}
+    background-image: url({{ $leafletFullscreenIconRetina.RelPermalink }});
+    background-size: 26px 26px
+}
+
+.content-text>p:first-of-type::first-letter {
+    font-family: 'DS Behrensschrift';
+    float: left;
+    font-size: 3em;
+    line-height: 1;
+    margin: .05em .15em -.1em 0;
+}
+
+.about-img {
+    width: 50%;
+    margin: auto;
+    margin-top: 5em;
+    border-radius: 47%;
 }

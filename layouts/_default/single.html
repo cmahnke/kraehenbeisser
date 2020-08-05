@@ -32,15 +32,17 @@
         </figure>
         </div>
         {{- end }}
-
-        {{ partial "iiif-image.html" . }}
-
-        <p class="post-reference">{{ .Description }}</p>
+        {{ if not .Params.hideDescription -}}
+          <p class="post-reference">{{ .Description }}</p>
+        {{- end }}
         {{ if .Params.toc -}}
           <h2>Contents</h2>
           {{ .TableOfContents }}
         {{- end }}
-        {{ .Content }}
+        <div class="content-text">
+          {{ .Content }}
+        </div>
+        {{ partial "iiif-image.html" . }}
       </article>
       {{ template "_internal/disqus.html" . }}
     </main>

@@ -17,8 +17,8 @@ canonifyurls = true
   errorimg = "images/kraehenbeisser.svg"
   rssinmenu = true
 
-#[taxonomies]
-#  Buch = "books"
+[markup.goldmark.renderer]
+  unsafe= true
 
 [module]
   [[module.mounts]]
@@ -28,6 +28,10 @@ canonifyurls = true
   [[module.mounts]]
     source = "node_modules/leaflet-iiif"
     target = "assets/js/leaflet-iiif"
+
+  [[module.mounts]]
+    source = "node_modules/leaflet.fullscreen"
+    target = "assets/js/leaflet.fullscreen"
 
   [[module.mounts]]
     source = "assets/scss"

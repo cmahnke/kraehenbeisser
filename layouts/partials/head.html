@@ -26,16 +26,18 @@
   {{ $mainStyle := resources.Get "css/style.css" }}
   {{ $overrideStyle := resources.Get "css/override.css" }}
   {{ $leafletStyle := resources.Get "js/leaflet/leaflet.css" }}
+  {{ $leafletFullscreenStyle := resources.Get "js/leaflet.fullscreen/Control.FullScreen.css" }}
   {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed") }}
-  {{ $scssStyle := resources.Get "scss/base.scss" | toCSS $options }}
-  {{ $style := slice $mainStyle $leafletStyle $overrideStyle $scssStyle | resources.Concat "css/concated.css" | minify }}
+  {{ $scssTemplate := resources.Get "scss/base.scss" }}
+  {{ $scssStyle := $scssTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options }}
+  {{ $style := slice $mainStyle $leafletStyle $leafletFullscreenStyle $overrideStyle $scssStyle | resources.Concat "css/concated.css" | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
   {{ $leafletLib := resources.Get "js/leaflet/leaflet.js" }}
   {{ $leafletIiifLib := resources.Get "js/leaflet-iiif/leaflet-iiif.js" }}
-  {{ $libs := slice "js/leaflet/leaflet.js" "js/leaflet-iiif/leaflet-iiif.js " }}
-  {{ $js := slice $leafletLib $leafletIiifLib | resources.Concat "js/concated.js" | minify | fingerprint }}
-  <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  {{ $leafletFullscreenLib := resources.Get "js/leaflet.fullscreen/Control.FullScreen.js" }}
+  {{ $js := slice $leafletLib $leafletIiifLib $leafletFullscreenLib | resources.Concat "js/concated.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

@@ -1,0 +1,2 @@
+  {{ $corejs := resources.Get "js/core.js" | minify }}
+  <script src="{{ $corejs.Permalink }}"></script>
