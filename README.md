@@ -1,7 +1,9 @@
 # Requirements
 
+* [Git](https://git-scm.com/) with [Git Large File Storage (LFS)](https://git-lfs.github.com/)
 * [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/)
-* [Hugo](https://gohugo.io/)
+* [Hugo](https://gohugo.io/) (make sure you have the `extended` build)
+* [`iiif_static.py`](https://github.com/zimeon/iiif/tree/master/demo-static)
 
 # Tools
 
