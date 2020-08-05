@@ -35,12 +35,14 @@ Diese Seite ist eine Sammlung historischer Abbildungen von Krähenbeißern, aus 
 
 Diese Seite wurde mit [Hugo](https://gohugo.io/) generiert. Als Theme kommt eine angepasste Version von [Aether](https://github.com/josephhutch/aether) zum Einsatz. Als Schriftarten werden [DS Behrensschrift](http://www.steffmann.de/wordpress/test-2/) für die Überschriften und [Nunito](https://github.com/googlefonts/nunito) für die anderen Elemente eingesetzt.
 
-Für die Darstellung der Digitalisate wird [Leaflet-IIIF](https://github.com/mejackreed/Leaflet-IIIF) und für die Vollbildansicht [Leaflet.fullscreen](https://github.com/Leaflet/Leaflet.fullscreen) verwendet. Beides sind Plugins für [Leaflet](https://leafletjs.com/).
+Der Hintergrund ist aus dem Buch "Deutsche Wiegenlieder" von Hans Fraungruber, erschienen ca. 1909 im Verlag Gerlach und Wiedling, Wien und Leipzig, entnommen. Die Digitalisierung wurde durch eine freundliche Leihgabe des [Antiquariats Pretzsch](https://antiquariat-pretzsch.de/) unterstützt. Wer Interesse an historischen Vorsatzpapieren hat, kann dort eine große Auswahl finden.
+
+Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) durchgeführt.
+
+Für die Darstellung der Digitalisate wird [Leaflet-IIIF](https://github.com/mejackreed/Leaflet-IIIF) und für die Vollbildansicht [Leaflet.fullscreen](https://github.com/brunob/leaflet.fullscreen) verwendet. Beides sind Plugins für [Leaflet](https://leafletjs.com/).
 Die jeweils angezeigten Ausschnitte wurden mit [`iiif_static.py`](https://github.com/zimeon/iiif) erzeugt.
 
-Die Seite wird von [GitHub](https://github.com/) gehosted.
-
-Der Hintergrund ist aus dem Buch "Deutsche Wiegenlieder" von Hans Fraungruber, erschienen ca. 1909 im Verlag Gerlach und Wiedling, Wien und Leipzig, entnommen. Die Digitalisierung wurde durch eine freundliche Leihgabe des [Antiquariats Pretzsch](https://antiquariat-pretzsch.de/) unterstützt. Wer Interesse an historischen Vorsatzpapieren hat, kann dort eine große Auswahl finden.
+Die Seite wird von [GitHub](https://github.com/) gehosted. Zur Unterstützung größerer Dateien kommt [Git Large File Storage (LFS)](https://git-lfs.github.com/) zum Einsatz.
 
 # Kontakt
 
