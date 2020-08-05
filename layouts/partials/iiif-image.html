@@ -1,5 +1,7 @@
+{{ $pageURL := .Permalink }}
 {{ with .Page.Resources.Match "iiif-manifest-*" }}
   {{ range . }}
+    <a name="{{ .Name }}"></a>
     <div id="{{ .Name }}" class="viewer"></div>
     <script type="text/javascript">
       {{ $mapName := replace .Name "-" "_" }}
@@ -18,6 +20,9 @@
             });
       var {{ $mapName | safeJS -}}_layer = L.tileLayer.iiif("{{ .RelPermalink }}", {tileSize: 512, fitBounds: true, setMaxBounds: true}).addTo({{ $mapName | safeJS }});
     </script>
-    <br/>
+    <div class="share">
+        <a href="{{ .Permalink }}" class="iiif-link">IIIF Manifest</a>
+        <a href="{{ $pageURL }}#{{ .Name }}" class="image-link">Link zu diesem Bild</a>
+    </div>
   {{ end }}
 {{ end }}

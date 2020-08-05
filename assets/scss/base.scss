@@ -157,7 +157,6 @@ img {
     }
 }
 
-
 // Leaflet fullscreen
 .fullscreen-icon {
     {{ $leafletFullscreenIcon := resources.Get "js/leaflet.fullscreen/icon-fullscreen.png" }}
@@ -183,4 +182,12 @@ img {
     margin: auto;
     margin-top: 5em;
     border-radius: 55%;
+}
+
+.share {
+    text-align: end;
+    font-size: small;
+    line-height: normal;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
 }

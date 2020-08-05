@@ -13,6 +13,9 @@ Diese Seite ist eine Sammlung historischer Abbildungen von Krähenbeißern, aus 
 
 # Über Krähenbeißer
 
+"Krähenbeißer" war ein Name für Fischer der Kurischen Nehrung, die Krähen fingen um sie eingepökelt als Winterverpflegung zu nutzen.
+Die bisher hier zur Verfügung gestellten Abbildungen sieht man das anpflocken der Lockkrähen, das Warten in der Fangbude (-hütte), das Leeren der Netze und den Biß.
+Der Name "Krähenbeißer" (oder im lokalen Dialekt: Krajebieter) rührt daher, dass die Krähen in den Schädel gebissen wurden um sie zu töten.
 
 ## Links
 
@@ -22,6 +25,11 @@ Diese Seite ist eine Sammlung historischer Abbildungen von Krähenbeißern, aus 
 
 * Tautorat, Hans-Georg, 1994. Rossitten. Nachdruck, 1994 [der Ausg. Hamburg 1978]. Hamburg: Landsmannschaft Ostpreußen
 
+# Todo
+
+Wie immer, gibt es natürlich auch hier Verbesserungspotential, folgende Punkte werden in der Zukunft verbessert:
+* Historische Texte sollten ebenfalls dargestellt werden
+* Mehr Abbildungen - die Google Bildersuche zeigt, dass es mehr Abbildungen gibt, diese sollten als analoge Vorlage erworben und digitalisiert werden.
 
 # Meine anderen Blogs
 
