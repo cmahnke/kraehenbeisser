@@ -1,3 +1,6 @@
 [submodule "themes/aether"]
 	path = themes/aether
 	url = https://github.com/josephhutch/aether.git
+[submodule "kraehenbeisser-redirect"]
+	path = kraehenbeisser-redirect
+	url = https://github.com/cmahnke/kraehenbeisser-redirect.git
