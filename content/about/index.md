@@ -11,6 +11,8 @@ hideDescription: true
 
 Diese Seite ist eine Sammlung historischer Abbildungen von Krähenbeißern, aus Gründen des Urheberrechtes werden dabei keine neueren Reproduktionen, wie sie manchmal in Büchern über Ostpreußen oder die Kurische Nehrung zu finden sind, aufgenommen.
 
+**Krähenbeisse.de** ist ein [Projektemacher.org Blog](https://projektemacher.org).
+
 # Über Krähenbeißer
 
 "Krähenbeißer" war ein Name für Fischer der Kurischen Nehrung, die Krähen fingen um sie eingepökelt als Winterverpflegung zu nutzen.
@@ -33,11 +35,11 @@ Wie immer, gibt es natürlich auch hier Verbesserungspotential, folgende Punkte 
 
 # Meine anderen Blogs
 
-* [Diapr&auml;sentation](http://diapraesentation.tumblr.com/) - Wird nicht mehr aktualisiert
-* [Flohmarktfunde](http://flohmarktfunde.tumblr.com/) - Wird nicht mehr aktualisiert
-* [H&auml;ssliche Plastiktiere und Zeugs](http://haesslicheplastiktiereundzeugs.tumblr.com/) - Wird nicht mehr aktualisiert
+Meine anderen Blogs sind auf [Projektemacher.org](https://projektemacher.org/blogs/) verlinkt, hier die, die noch aktualisiert werden:
+
 * [Nebeleule](http://nebeleule.de/) - Mit anderen, einige Posts pro Woche
 * [Ric, an unknown artist](https://ric-unknownartist.tumblr.com) - Wird selten aktualisiert
+* [Yaapb, Yet another analog photo blog](https://yaapb.tumblr.com/) - Wird selten aktualisiert
 
 # Kolophon
 
@@ -51,7 +53,3 @@ Für die Darstellung der Digitalisate wird [Leaflet-IIIF](https://github.com/mej
 Die jeweils angezeigten Ausschnitte wurden mit [`iiif_static.py`](https://github.com/zimeon/iiif) erzeugt.
 
 Die Seite wird von [GitHub](https://github.com/) gehosted. Zur Unterstützung größerer Dateien kommt [Git Large File Storage (LFS)](https://git-lfs.github.com/) zum Einsatz.
-
-# Kontakt
-
-<img class="about-img" alt="Krähenbeißer" src="/images/kraehenbeisser.svg">
