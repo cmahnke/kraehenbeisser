@@ -174,12 +174,19 @@ img {
     background-size: 26px 26px
 }
 
-.content-text>p:first-of-type::first-letter {
-    font-family: 'DS Behrensschrift';
-    float: left;
-    font-size: 3em;
-    line-height: 1;
-    margin: .05em .15em -.1em 0;
+.content-text {
+    &>p:first-of-type::first-letter {
+        font-family: 'DS Behrensschrift';
+        float: left;
+        font-size: 3em;
+        line-height: 1;
+        margin: .05em .15em -.1em 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 1.5em 0 .6em;
+    }
+
 }
 
 .about-img {
