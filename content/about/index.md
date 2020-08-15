@@ -15,7 +15,7 @@ Diese Seite ist eine Sammlung historischer Abbildungen von Krähenbeißern, aus 
 
 # Über Krähenbeißer
 
-"Krähenbeißer" war ein Name für Fischer der Kurischen Nehrung, die Krähen fingen um sie eingepökelt als Winterverpflegung zu nutzen.
+"Krähenbeißer" war ein Name für Fischer der Kurischen Nehrung bzw. des Kurischen Haffs, die Krähen fingen um sie eingepökelt als Winterverpflegung zu nutzen.
 Die bisher hier zur Verfügung gestellten Abbildungen sieht man das anpflocken der Lockkrähen, das Warten in der Fangbude (-hütte), das Leeren der Netze und den Biß.
 Der Name "Krähenbeißer" (oder im lokalen Dialekt: Krajebieter) rührt daher, dass die Krähen in den Schädel gebissen wurden um sie zu töten.
 
