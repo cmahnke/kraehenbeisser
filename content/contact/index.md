@@ -10,9 +10,6 @@ hideDescription: true
 ---
 "Krähenbeißer" ist ein Projekt von **Christian Mahnke**.
 
-
-
 Kontakt ist via [E-Mail](mailto:kraehenbeisser@projektemacher.org) möglich.
-
 
 <img class="about-img" alt="Krähenbeißer" src="/images/kraehenbeisser.svg">
