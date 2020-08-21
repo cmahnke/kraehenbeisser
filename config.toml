@@ -7,6 +7,9 @@ disableKinds = ["term", "taxonomy"]
 publishDir = "docs"
 canonifyurls = true
 #paginate = 3
+author = "Christian Mahnke"
+description = "Historische Abbildungen von Krähenbeißern"
+keywords = "Krähenbeißer, Krajebieter, Kurische Nehrung, Kurisches Haff, Curonian Lagoon, Curonian Spit"
 
 [params]
   brand = "Krähenbeißer"
