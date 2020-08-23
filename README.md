@@ -65,3 +65,11 @@ hugo server -D --debug --disableFastRender
 ````
 DOCKER_BUILDKIT=1 docker build .
 ````
+
+# Setup for local (offine) development
+
+Run the following script to generate assets
+
+```
+./scripts/setup.sh
+```

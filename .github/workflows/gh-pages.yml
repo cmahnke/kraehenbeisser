@@ -22,20 +22,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install iiif
-      - name: Generate Tiles
-        run: |
-          cd static/images
-          iiif_static.py -d ../../content/post/rossitten rossitten-33.jpeg rossitten-34.jpeg
-          iiif_static.py  -d ../../content/post/kurische-nehrung kurische-nehrung-59.jpeg kurische-nehrung-60.jpeg
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 10.22.0
-      - name: Install Node dependencies
+
+      - name: Generate Files
         run: |
-          yarn install
-          yarn run svgo
+          ./scripts/setup.sh
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
