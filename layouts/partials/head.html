@@ -35,6 +35,11 @@
   {{ $style := slice $mainStyle $leafletStyle $leafletFullscreenStyle $overrideStyle $scssStyle | resources.Concat "css/concated.css" | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
+  {{/* External Styles - Fonts etc */}}
+  {{ range .Site.Params.stylesheets -}}
+    <link href="{{ . }}" rel="stylesheet">
+  {{- end -}}
+
   {{ $leafletLib := resources.Get "js/leaflet/leaflet.js" }}
   {{ $leafletIiifLib := resources.Get "js/leaflet-iiif/leaflet-iiif.js" }}
   {{ $leafletFullscreenLib := resources.Get "js/leaflet.fullscreen/Control.FullScreen.js" }}
