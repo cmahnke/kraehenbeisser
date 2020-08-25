@@ -3,22 +3,10 @@
   {{ range . }}
     <a name="{{ .Name }}"></a>
     <div id="{{ .Name }}" class="viewer"></div>
+    {{ $mapName := replace .Name "-" "_" }}
     <script type="text/javascript">
-      {{ $mapName := replace .Name "-" "_" }}
-      {{ $mapName | safeJS }} = L.map('{{ .Name }}', {
-              center: [0, 0],
-              crs: L.CRS.Simple,
-              zoom: 1,
-              attributionControl:false,
-              minZoom: 1,
-              maxZoom: 6,
-              fullscreenControl: true,
-              fullscreenControlOptions: {
-                title: 'Starte Vollbildansicht',
-                titleCancel: 'Vollbildansicht verlassen'
-              }
-            });
-      var {{ $mapName | safeJS -}}_layer = L.tileLayer.iiif("{{ .RelPermalink }}", {tileSize: 512, fitBounds: true, setMaxBounds: true}).addTo({{ $mapName | safeJS }});
+        {{ $mapName | safeJS }}_Div = document.getElementById("{{ .Name }}");
+        addMap({{ $mapName | safeJS }}_Div, "{{ .RelPermalink }}");
     </script>
     <div class="share">
         {{ $downloadURL := printf "/images/%s.jpg" (path.Base (path.Dir .RelPermalink)) }}

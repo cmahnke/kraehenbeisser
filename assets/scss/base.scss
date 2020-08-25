@@ -160,18 +160,6 @@ img {
     }
 }
 
-// Leaflet fullscreen
-.fullscreen-icon {
-    {{ $leafletFullscreenIcon := resources.Get "js/leaflet.fullscreen/icon-fullscreen.png" }}
-    background-image: url({{ $leafletFullscreenIcon.RelPermalink }})
-}
-
-.leaflet-retina .fullscreen-icon {
-    {{ $leafletFullscreenIconRetina := resources.Get "js/leaflet.fullscreen/icon-fullscreen.png" }}
-    background-image: url({{ $leafletFullscreenIconRetina.RelPermalink }});
-    background-size: 26px 26px
-}
-
 .content-text {
     &>p:first-of-type::first-letter {
         font-family: 'DS Behrensschrift';

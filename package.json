@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "leaflet": "^1.6.0",
-    "leaflet-iiif": "^3.0.0",
-    "leaflet.fullscreen": "^1.6.0"
+    "ol": "^6.4.3"
   },
   "devDependencies": {
     "hugo-extended": "^0.74.3",

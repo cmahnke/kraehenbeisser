@@ -26,16 +26,8 @@ description = "Historische Abbildungen von Krähenbeißern"
 
 [module]
   [[module.mounts]]
-    source = "node_modules/leaflet/dist"
-    target = "assets/js/leaflet"
-
-  [[module.mounts]]
-    source = "node_modules/leaflet-iiif"
-    target = "assets/js/leaflet-iiif"
-
-  [[module.mounts]]
-    source = "node_modules/leaflet.fullscreen"
-    target = "assets/js/leaflet.fullscreen"
+    source = "assets/js"
+    target = "assets/js"
 
   [[module.mounts]]
     source = "assets/scss"
@@ -46,5 +38,5 @@ description = "Historische Abbildungen von Krähenbeißern"
     target = "assets/images"
 
   [[module.mounts]]
-    source = "node_modules/leaflet/dist/images"
-    target = "assets/images/leaflet"
+    source = "node_modules/ol"
+    target = "assets/css/ol"

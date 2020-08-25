@@ -27,12 +27,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   {{ $mainStyle := resources.Get "css/style.css" }}
   {{ $overrideStyle := resources.Get "css/override.css" }}
-  {{ $leafletStyle := resources.Get "js/leaflet/leaflet.css" }}
-  {{ $leafletFullscreenStyle := resources.Get "js/leaflet.fullscreen/Control.FullScreen.css" }}
+  {{ $olStyle := resources.Get "css/ol/ol.css" }}
   {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed") }}
   {{ $scssTemplate := resources.Get "scss/base.scss" }}
   {{ $scssStyle := $scssTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options }}
-  {{ $style := slice $mainStyle $leafletStyle $leafletFullscreenStyle $overrideStyle $scssStyle | resources.Concat "css/concated.css" | minify }}
+  {{ $style := slice $mainStyle $olStyle $overrideStyle $scssStyle | resources.Concat "css/concated.css" | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
   {{/* External Styles - Fonts etc */}}
@@ -40,10 +39,11 @@
     <link href="{{ . }}" rel="stylesheet">
   {{- end -}}
 
-  {{ $leafletLib := resources.Get "js/leaflet/leaflet.js" }}
-  {{ $leafletIiifLib := resources.Get "js/leaflet-iiif/leaflet-iiif.js" }}
-  {{ $leafletFullscreenLib := resources.Get "js/leaflet.fullscreen/Control.FullScreen.js" }}
-  {{ $js := slice $leafletLib $leafletIiifLib $leafletFullscreenLib | resources.Concat "js/concated.js" | minify | fingerprint }}
+  {{ $defines := dict "process.env.NODE_ENV" `"development"` }}
+  {{ $opts := dict "targetPath" "js/main.js" "defines" $defines }}
+  {{ $iiifViewer := resources.Get "js/iiif-viewer.js" | js.Build $opts }}
+
+  {{ $js := slice $iiifViewer | resources.Concat "js/concated.js" | minify | fingerprint }}
   <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
   {{ range .AlternativeOutputFormats -}}
