@@ -3,5 +3,5 @@ docs
 node_modules/
 assets/images/kraehenbeisser.svg
 resources
-content/post/kurische-nehrung/kurische*
-content/post/rossitten/rossitten*
+content/post/kurische-nehrung/kurische-nehrung*/**
+content/post/rossitten/rossitten*/**

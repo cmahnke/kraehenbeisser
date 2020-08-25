@@ -73,3 +73,9 @@ Run the following script to generate assets
 ```
 ./scripts/setup.sh
 ```
+
+# Debugging `static` mounts
+
+```
+/usr/local/bin/hugo server -D --debug --disableFastRender --renderToDisk
+```

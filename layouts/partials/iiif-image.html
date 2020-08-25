@@ -21,7 +21,11 @@
       var {{ $mapName | safeJS -}}_layer = L.tileLayer.iiif("{{ .RelPermalink }}", {tileSize: 512, fitBounds: true, setMaxBounds: true}).addTo({{ $mapName | safeJS }});
     </script>
     <div class="share">
-        <a href="{{ .Permalink }}" class="iiif-link">IIIF Manifest</a>
+        {{ $downloadURL := printf "/images/%s.jpg" (path.Base (path.Dir .RelPermalink)) }}
+        {{ if (fileExists (printf "static%s" $downloadURL)) }}
+            <a href="/{{- $downloadURL -}}" class="image-download">Volle Auflösung herunterladen</a> | 
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="iiif-link">IIIF Manifest</a> |
         <a href="{{ $pageURL }}#{{ .Name }}" class="image-link">Link zu diesem Bild</a>
     </div>
   {{ end }}
