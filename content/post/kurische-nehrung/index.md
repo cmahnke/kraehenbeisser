@@ -21,7 +21,7 @@ resources:
 - src: "iiif/kurische-nehrung-60/info.json"
 - name: iiif-manifest-:counter
   params:
-    tify: true
+    rotate: 90
   src: '**.json'
 ---
 # Beschreibung

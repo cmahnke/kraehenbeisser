@@ -7,13 +7,18 @@ import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
 import {FullScreen, Rotate, defaults as defaultControls} from 'ol/control';
 
-window.addMap = function(element, url) {
+window.addMap = function(element, url, rotation) {
+    var initialRotation = 0;
+    if (rotation !== undefined && rotation != 0) {
+        initialRotation = rotation * Math.PI / 180;
+    }
     var layer = new TileLayer(),
         map = new Map({
             controls: defaultControls().extend([new FullScreen(), new Rotate()]),
             layers: [layer],
-            target: element
+            target: element,
         });
+
     fetch(url)
         .then(function(response) {
             response
@@ -32,6 +37,7 @@ window.addMap = function(element, url) {
                             resolutions: iiifTileSource.getTileGrid().getResolutions(),
                             extent: iiifTileSource.getTileGrid().getExtent(),
                             constrainOnlyCenter: true,
+                            rotation: initialRotation
                         })
                     );
                     map.getView().fit(iiifTileSource.getTileGrid().getExtent());

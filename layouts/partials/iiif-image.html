@@ -4,9 +4,13 @@
     <a name="{{ .Name }}"></a>
     <div id="{{ .Name }}" class="viewer"></div>
     {{ $mapName := replace .Name "-" "_" }}
+    {{ $rotation := 0 }}
+    {{ if .Params.rotate }}
+        {{ $rotation = .Params.rotate }}
+    {{ end }}
     <script type="text/javascript">
         {{ $mapName | safeJS }}_Div = document.getElementById("{{ .Name }}");
-        addMap({{ $mapName | safeJS }}_Div, "{{ .RelPermalink }}");
+        {{ $mapName | safeJS }} = addMap({{ $mapName | safeJS }}_Div, "{{ .RelPermalink }}", {{ $rotation }});
     </script>
     <div class="share">
         {{ $downloadURL := printf "/images/%s.jpg" (path.Base (path.Dir .RelPermalink)) }}
