@@ -1,3 +1,5 @@
+@import "ol-iiif.scss";
+
 @font-face {
   font-family: 'DS Behrensschrift';
   src: url('../font/DSBehrensschrift.otf') format('woff'),
@@ -7,6 +9,8 @@
   font-display: swap;
   text-rendering: optimizeLegibility;
 }
+
+/* The contents */
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -121,7 +125,7 @@ img {
     margin-bottom: 36px;
 }
 
-// IIIF viewer
+/* IIIF viewer */
 .viewer {
     width: 100%;
     height: 95vh;
@@ -132,7 +136,7 @@ img {
     outline: 0;
 }
 
-// Image ressources in posts
+/* Image ressources in posts */
 .image-header {
     margin: auto;
     display: flex;
@@ -204,10 +208,4 @@ main.about {
     background-position: 97% 5em;
     background-image: url('/images/cm.svg');
     background-repeat: no-repeat;
-}
-
-// Open layers
-
-.ol-rotate {
-    top: 2.5em;
 }
