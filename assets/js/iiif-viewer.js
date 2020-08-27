@@ -10,7 +10,7 @@ import {Control, FullScreen, Rotate, Zoom} from 'ol/control';
 var RotateLeftControl = /*@__PURE__*/ (function(Control) {
     function RotateLeftControl(opt_options) {
         var options = opt_options || {};
-        const tipLabel = options.tipLabel ? options.tipLabel : 'Rotate 90° right';
+        const tipLabel = options.tipLabel ? options.tipLabel : 'Rotate 90° left';
 
         var button = document.createElement('button');
         button.innerHTML = '<i class="icon-left"></i>';
