@@ -5,14 +5,16 @@ import IIIFInfo from 'ol/format/IIIFInfo';
 import Map from 'ol/Map';
 import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
-import {Control, FullScreen, Rotate, defaults as defaultControls} from 'ol/control';
+import {Control, FullScreen, Rotate, Zoom} from 'ol/control';
 
 var RotateLeftControl = /*@__PURE__*/ (function(Control) {
     function RotateLeftControl(opt_options) {
         var options = opt_options || {};
+        const tipLabel = options.tipLabel ? options.tipLabel : 'Rotate 90° right';
 
         var button = document.createElement('button');
         button.innerHTML = '<i class="icon-left"></i>';
+        button.title = tipLabel;
 
         var element = document.createElement('div');
         element.className = 'rotate-left ol-unselectable ol-control';
@@ -41,9 +43,11 @@ var RotateLeftControl = /*@__PURE__*/ (function(Control) {
 var RotateRightControl = /*@__PURE__*/ (function(Control) {
     function RotateRightControl(opt_options) {
         var options = opt_options || {};
+        const tipLabel = options.tipLabel ? options.tipLabel : 'Rotate 90° right';
 
         var button = document.createElement('button');
         button.innerHTML = '<i class="icon-right"></i>';
+        button.title = tipLabel;
 
         var element = document.createElement('div');
         element.className = 'rotate-right ol-unselectable ol-control';
@@ -76,7 +80,7 @@ window.addMap = function(element, url, rotation) {
     }
     var layer = new TileLayer(),
         map = new Map({
-            controls: defaultControls().extend([new FullScreen(), new Rotate(), new RotateLeftControl(), new RotateRightControl()]),
+            controls: [new Zoom({zoomInTipLabel: 'Vergrößern', zoomOutTipLabel: 'Verkleinern'}), new FullScreen({tipLabel: 'Vollbildansicht'}), new Rotate({tipLabel: 'Rotation zurücksetzen'}), new RotateLeftControl({tipLabel: '90° nach rechts drehen'}), new RotateRightControl({tipLabel: '90° nach links drehen'})],
             layers: [layer],
             target: element,
         });

@@ -39,8 +39,8 @@
     <link href="{{ . }}" rel="stylesheet">
   {{- end -}}
 
-  {{ $defines := dict "process.env.NODE_ENV" `"development"` }}
-  {{ $opts := dict "targetPath" "js/main.js" "defines" $defines }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" true }}
   {{ $iiifViewer := resources.Get "js/iiif-viewer.js" | js.Build $opts }}
 
   {{ $js := slice $iiifViewer | resources.Concat "js/concated.js" | minify | fingerprint }}
