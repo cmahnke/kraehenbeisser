@@ -49,6 +49,6 @@ Der Hintergrund ist aus dem Buch "Deutsche Wiegenlieder" von Hans Fraungruber, e
 
 Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) durchgeführt.
 
-Für die Darstellung der Digitalisate wird [OplenLayers](https://openlayers.org/) verwendet. Die jeweils angezeigten Ausschnitte wurden mit [`iiif_static.py`](https://github.com/zimeon/iiif) erzeugt.
+Für die Darstellung der Digitalisate wird [OpenLayers](https://openlayers.org/) verwendet. Die jeweils angezeigten Ausschnitte wurden mit [`iiif_static.py`](https://github.com/zimeon/iiif) erzeugt.
 
 Die Seite wird von [GitHub](https://github.com/) gehosted. Zur Unterstützung größerer Dateien kommt [Git Large File Storage (LFS)](https://git-lfs.github.com/) zum Einsatz.
