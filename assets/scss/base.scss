@@ -186,18 +186,6 @@ img {
     border-radius: 55%;
 }
 
-.share {
-    text-align: end;
-    font-size: small;
-    line-height: normal;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-
-    a {
-        text-decoration: none;
-    }
-}
-
 {{ with resources.Get .Site.Params.bgimg -}}
     body {
       background: #ecedef url("{{ .Permalink | safeCSS }}") repeat;

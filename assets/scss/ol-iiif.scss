@@ -46,3 +46,15 @@ $left: "data:image/svg+xml;utf8,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' vie
         background-position: center;
     }
 }
+
+.share {
+    text-align: end;
+    font-size: small;
+    line-height: normal;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+
+    a {
+        text-decoration: none;
+    }
+}
