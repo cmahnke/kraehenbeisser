@@ -24,14 +24,14 @@
   {{ if (fileExists "layouts/partials/meta-tags.html") -}}
     {{ partial "meta-tags.html" . }}
   {{ end -}}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  {{ $normalizeStyle := resources.Get "css/normalize/normalize.css" }}
   {{ $mainStyle := resources.Get "css/style.css" }}
   {{ $overrideStyle := resources.Get "css/override.css" }}
   {{ $olStyle := resources.Get "css/ol/ol.css" }}
   {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed") }}
   {{ $scssTemplate := resources.Get "scss/base.scss" }}
   {{ $scssStyle := $scssTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options }}
-  {{ $style := slice $mainStyle $olStyle $overrideStyle $scssStyle | resources.Concat "css/concated.css" | minify }}
+  {{ $style := slice $normalizeStyle $mainStyle $olStyle $overrideStyle $scssStyle | resources.Concat "css/concated.css" | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
   {{/* External Styles - Fonts etc */}}
