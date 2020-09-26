@@ -45,7 +45,7 @@ Meine anderen Blogs sind auf [Projektemacher.org](https://projektemacher.org/blo
 
 Diese Seite wurde mit [Hugo](https://gohugo.io/) generiert. Als Theme kommt eine angepasste Version von [Aether](https://github.com/josephhutch/aether) zum Einsatz. Als Schriftarten werden [DS Behrensschrift](http://www.steffmann.de/wordpress/test-2/) für die Überschriften und [Nunito](https://github.com/googlefonts/nunito) für die anderen Elemente eingesetzt.
 
-Der Hintergrund ist aus dem Buch "Deutsche Wiegenlieder" von Hans Fraungruber, erschienen ca. 1909 im Verlag Gerlach und Wiedling, Wien und Leipzig, entnommen. Die Digitalisierung wurde durch eine freundliche Leihgabe des [Antiquariats Pretzsch](https://antiquariat-pretzsch.de/) unterstützt. Wer Interesse an historischen Vorsatzpapieren hat, kann dort eine große Auswahl finden.
+Der Hintergrund ist aus dem Buch "Niedersachsens Sagenborn" herausgegeben von Karl Henniger und Johann von Harten illustriert von Arnold Busch, erschienen 1907 im Verlag August Lax, Hildesheim, entnommen. Die Vorlage wurde durch das [Antiquariats Pretzsch](https://antiquariat-pretzsch.de/) empfohlen. Wer Interesse an historischen Vorsatzpapieren hat, kann dort eine große Auswahl finden. Der alte Hintergrund und weitere Vorsatzpapiere gibt es bei [Vorsatzpapiere](https://vorsatzpapier.projektemacher.org).
 
 Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) durchgeführt.
 

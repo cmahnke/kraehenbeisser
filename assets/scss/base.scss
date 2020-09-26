@@ -186,11 +186,11 @@ img {
     border-radius: 55%;
 }
 
-{{ with resources.Get .Site.Params.bgimg -}}
-    body {
-      background: #ecedef url("{{ .Permalink | safeCSS }}") repeat;
-    }
-{{ end }}
+body {
+  background: #ecedef url(/images/raben.jpg) repeat;
+  background-size: 10%;
+}
+
 
 main.about {
     background-position: 97% 5em;
