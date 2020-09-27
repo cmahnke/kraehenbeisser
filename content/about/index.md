@@ -52,3 +52,9 @@ Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://git
 Für die Darstellung der Digitalisate wird [OpenLayers](https://openlayers.org/) verwendet. Die jeweils angezeigten Ausschnitte wurden mit [`iiif_static.py`](https://github.com/zimeon/iiif) erzeugt.
 
 Die Seite wird von [GitHub](https://github.com/) gehosted. Zur Unterstützung größerer Dateien kommt [Git Large File Storage (LFS)](https://git-lfs.github.com/) zum Einsatz.
+
+#Kontakt
+
+"Krähenbeißer" ist ein Projekt von **Christian Mahnke**.
+
+Kontakt ist via [E-Mail](mailto:flohmarktfunde@projektemacher.org) möglich.
