@@ -2,23 +2,40 @@
 
 @font-face {
   font-family: 'DS Behrensschrift';
-  src: url('../font/DSBehrensschrift.otf') format('woff'),
-       url('../font/DSBehrensschrift.ttf')  format('truetype');
+  src: url('/fonts/DSBehrensschrift.otf') format('woff'),
+       url('/fonts/DSBehrensschrift.ttf')  format('truetype');
   font-style: normal;
   font-weight: normal;
   font-display: swap;
   text-rendering: optimizeLegibility;
 }
 
-/* The contents */
+/* Fonts downloaded from https://google-webfonts-helper.herokuapp.com/ */
+/* nunito-sans-regular - latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/nunito-sans-v6-latin-regular.woff2') format('woff2'),
+       url('/fonts/nunito-sans-v6-latin-regular.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/nunito-sans-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/nunito-sans-v6-latin-700.woff') format('woff'),;
+}
+
+/* The contents */
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
 strong {
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 nav, main {
