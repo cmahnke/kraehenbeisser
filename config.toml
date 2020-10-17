@@ -34,11 +34,3 @@ description = "Historische Abbildungen von Krähenbeißern"
   [[module.mounts]]
     source = "assets/images"
     target = "assets/images"
-
-  [[module.mounts]]
-    source = "node_modules/ol"
-    target = "assets/css/ol"
-
-  [[module.mounts]]
-    source = "node_modules/normalize.css"
-    target = "assets/css/normalize"
