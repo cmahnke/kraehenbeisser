@@ -22,15 +22,6 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           logout: false
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.7.8
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install iiif
-
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
