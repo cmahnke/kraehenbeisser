@@ -17,8 +17,8 @@ resources:
   src: "title.jpeg"
   params:
     description: "Titelseite"
-- src: "iiif/rossitten-33/info.json"
-- src: "iiif/rossitten-34/info.json"
+- src: "page033/info.json"
+- src: "page034/info.json"
 - name: iiif-manifest-:counter
   params:
     tify: true

@@ -6,3 +6,4 @@ resources
 content/post/kurische-nehrung/kurische-nehrung*/**
 content/post/rossitten/rossitten*/**
 static/images/favicon*.*
+content/post/*/page*

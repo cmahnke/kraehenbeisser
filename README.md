@@ -3,7 +3,7 @@
 * [Git](https://git-scm.com/) with [Git Large File Storage (LFS)](https://git-lfs.github.com/)
 * [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/)
 * [Hugo](https://gohugo.io/) (make sure you have the `extended` build)
-* [`iiif_static.py`](https://github.com/zimeon/iiif/tree/master/demo-static)
+* [libvips](https://github.com/libvips/libvips) - at least version 8.10.2
 
 # Tools
 
@@ -33,7 +33,16 @@ You can use [`svgo`](https://github.com/svg/svgo) to optimize SVG files exported
 yarn run svgo
 ````
 
+## Dumping MARC records
+
+* One can export MARC files from [Librarything](https://www.librarything.com/export.php?export_type=marc).
+* Get the [`yaz` library and command line tool](https://www.indexdata.com/resources/software/yaz/) to dump the contents: `yaz-marcdump static/marc/Krähenbeißer.marc`
+
+# IIIF
+
 ## Install IIIF static generator
+
+**Note:** The python based generator isn't used anymore, it's very slow!
 
 To generate IIIF manifests for posts you need the [`iiif_static.py`](https://github.com/zimeon/iiif/tree/master/demo-static) tool, you need the [Python IIIF module](https://github.com/zimeon/iiif).
 
@@ -49,16 +58,13 @@ iiif_static.py -d ../iiif rossitten-33.jpeg rossitten-34.jpeg
 iiif_static.py  -d ../iiif kurische-nehrung-58.jpeg kurische-nehrung-59.jpeg kurische-nehrung-60.jpeg
 ````
 
-## Dumping MARC records
+## Remove generated IIIF directories
 
-* One can export MARC files from [Librarything](https://www.librarything.com/export.php?export_type=marc).
-* Get the [`yaz` library and command line tool](https://www.indexdata.com/resources/software/yaz/) to dump the contents: `yaz-marcdump static/marc/Krähenbeißer.marc`
+```
+find content/post/ -name info.json -exec dirname {} \; | xargs rm -r
+```
 
-## Starting `hugo` server module
 
-````
-hugo server -D --debug --disableFastRender
-````
 
 # Using Docker
 
@@ -78,4 +84,21 @@ Run the following script to generate assets
 
 ```
 /usr/local/bin/hugo server -D --debug --disableFastRender --renderToDisk
+```
+
+# Running `hugo`
+
+## Starting `hugo` server module
+
+````
+hugo server -D -F --debug
+````
+
+## Without watching
+
+This might be needed if there are to many sub directories (with IIIF structures) generated, since watching might not work in this setup.
+
+```
+hugo serve -D -F --debug --disableFastRender  --disableLiveReload --watch=false --renderToDisk
+
 ```

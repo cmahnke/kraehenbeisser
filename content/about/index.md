@@ -35,11 +35,9 @@ Wie immer, gibt es natürlich auch hier Verbesserungspotential, folgende Punkte 
 
 # Meine anderen Blogs
 
-Meine anderen Blogs sind auf [Projektemacher.org](https://projektemacher.org/blogs/) verlinkt, hier die, die noch aktualisiert werden:
+Meine anderen Blogs sind auf [Projektemacher.org](https://projektemacher.org/blogs/) verlinkt, hier die, die dort nicht aufgeführt werden:
 
 * [Nebeleule](http://nebeleule.de/) - Mit anderen, einige Posts pro Woche
-* [Ric, an unknown artist](https://ric-unknownartist.tumblr.com) - Wird selten aktualisiert
-* [Yaapb, Yet another analog photo blog](https://yaapb.tumblr.com/) - Wird selten aktualisiert
 
 # Kolophon
 
@@ -49,7 +47,7 @@ Der Hintergrund ist aus dem Buch "Niedersachsens Sagenborn" herausgegeben von Ka
 
 Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) durchgeführt.
 
-Für die Darstellung der Digitalisate wird [OpenLayers](https://openlayers.org/) verwendet. Die jeweils angezeigten Ausschnitte wurden mit [`iiif_static.py`](https://github.com/zimeon/iiif) erzeugt.
+Für die Darstellung der Digitalisate wird [OpenLayers](https://openlayers.org/) verwendet. Die jeweils angezeigten Ausschnitte wurden mit [libvips](https://libvips.github.io/libvips/) erzeugt.
 
 Die Seite wird von [GitHub](https://github.com/) gehosted. Zur Unterstützung größerer Dateien kommt [Git Large File Storage (LFS)](https://git-lfs.github.com/) zum Einsatz.
 
