@@ -51,7 +51,7 @@ Für die Darstellung der Digitalisate wird [OpenLayers](https://openlayers.org/)
 
 Die Seite wird von [GitHub](https://github.com/) gehosted. Zur Unterstützung größerer Dateien kommt [Git Large File Storage (LFS)](https://git-lfs.github.com/) zum Einsatz.
 
-#Kontakt
+# Kontakt
 
 "Krähenbeißer" ist ein Projekt von **Christian Mahnke**.
 
