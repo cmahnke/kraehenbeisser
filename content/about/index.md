@@ -53,6 +53,6 @@ Die Seite wird von [GitHub](https://github.com/) gehosted. Zur Unterstützung gr
 
 # Kontakt
 
-"Krähenbeißer" ist ein Projekt von **Christian Mahnke**.
+"Krähenbeißer" ist ein [Projekt](https://projektemacher.org) von **Christian Mahnke**.
 
 Kontakt ist via [E-Mail](mailto:flohmarktfunde@projektemacher.org) möglich.
