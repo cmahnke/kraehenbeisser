@@ -49,7 +49,7 @@ Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://git
 
 Für die Darstellung der Digitalisate wird [OpenLayers](https://openlayers.org/) verwendet. Die jeweils angezeigten Ausschnitte wurden mit [libvips](https://libvips.github.io/libvips/) erzeugt.
 
-Die Seite wird von [GitHub](https://github.com/) gehosted. Zur Unterstützung größerer Dateien kommt [Git Large File Storage (LFS)](https://git-lfs.github.com/) zum Einsatz.
+Die Seite wird von [GitHub](https://github.com/) gehosted.
 
 # Kontakt
 
