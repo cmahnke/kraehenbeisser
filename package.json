@@ -4,12 +4,9 @@
     "ol": "^6.4.3"
   },
   "devDependencies": {
-    "hugo-extended": "^0.74.3",
     "svgo": "^1.3.2"
   },
   "scripts": {
-    "svgo": "node_modules/.bin/svgo -i static/svg/Krähenbeißer.svg -o assets/images/kraehenbeisser.svg",
-    "build": "hugo",
-    "start": "hugo server -D --debug --disableFastRender --buildFuture"
+    "svgo": "node_modules/.bin/svgo -i static/svg/Krähenbeißer.svg -o assets/images/kraehenbeisser.svg"
   }
 }
