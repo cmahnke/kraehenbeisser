@@ -18,6 +18,7 @@ description = "Historische Abbildungen von Krähenbeißern"
   author = "Christian Mahnke"
   keywords = "Krähenbeißer, Krajebieter, Kurische Nehrung, Kurisches Haff, Curonian Lagoon, Curonian Spit"
   stylesheets = []
+  copyrightYears = "MMXXI"
 
 [markup.goldmark.renderer]
   unsafe= true
