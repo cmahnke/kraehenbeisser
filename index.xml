@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Krähenbeißer</title>
+    <link>https://kr%C3%A4henbeisser.de/</link>
+    <description>Recent content on Krähenbeißer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 29 Jul 2020 10:22:44 +0200</lastBuildDate>
+    
+        <atom:link href="https://kr%C3%A4henbeisser.de/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>https://kr%C3%A4henbeisser.de/post/</link>
+      <pubDate>Wed, 29 Jul 2020 10:22:44 +0200</pubDate>
+      
+      <guid>https://kr%C3%A4henbeisser.de/post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
