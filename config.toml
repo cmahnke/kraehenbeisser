@@ -20,6 +20,18 @@ description = "Historische Abbildungen von Krähenbeißern"
   stylesheets = []
   copyrightYears = "MMXXI"
 
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["geojson", "gjson"]
+
+[outputFormats]
+  [outputFormats.GEOJSON]
+    mediaType = "application/json"
+    isPlainText = true
+    isHTML = false
+    baseName = "map"
+    notAlternative = true
+
 [markup.goldmark.renderer]
   unsafe= true
 

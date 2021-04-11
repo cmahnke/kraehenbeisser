@@ -8,6 +8,10 @@ displayInList: true
 categories: ["Buch"]
 toc: false
 dropCap: false
+geojson:
+  coordinates:
+  - 55.1575512
+  - 20.8416522
 resources:
 - name: featuredImage
   src: "front.jpeg"
