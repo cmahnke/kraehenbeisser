@@ -55,37 +55,6 @@ other = "Einzelfundstück"
 [allTags]
 other = "Alle Beiträge mit dem Tag"
 
-# Post relations
-[sectionParent]
-other = "Diese Seite ist Teil der Sammlung"
-
-[sectionContentsList]
-other = "Diese Sammlung enthält die folgenden Seiten"
-
-#Book parts
-[cover]
-other = "Umschlag"
-
-[front]
-other = "Buchdeckel"
-
-[title]
-other = "Titelseite"
-
-# Languages
-[en]
-other = "Englisch"
-
-[de]
-other = "Deutsch"
-
-# Pagination
-[next_page]
-other = "Vor"
-
-[previous_page]
-other = "Zurück"
-
 #Other
 [preview]
 other = "Vorschau"

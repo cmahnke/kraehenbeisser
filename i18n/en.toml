@@ -55,37 +55,6 @@ other = "Single find"
 [allTags]
 other = "View all posts tagged"
 
-# Post relations
-[sectionParent]
-other = "This page is part of the following collection"
-
-[sectionContentsList]
-other = "This collection contains the following pages"
-
-#Book parts
-[cover]
-other = "Dust jacket"
-
-[front]
-other = "Front cover"
-
-[title]
-other = "Title page"
-
-# Languages
-[en]
-other = "English"
-
-[de]
-other = "German"
-
-# Pagination
-[next_page]
-other = "Next"
-
-[previous_page]
-other = "Back"
-
 #Other
 [preview]
 other = "Preview"
