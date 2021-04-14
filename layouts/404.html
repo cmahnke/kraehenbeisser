@@ -9,9 +9,7 @@
            <a href="{{ "/" | relURL }}">404 Seite nicht gefunden!</a>
        </h1>
       {{ if .Site.Params.errorimg -}}
-          {{ with resources.Get .Site.Params.errorimg -}}
-            <img src="{{ .Permalink }}" alt="Diese Seite hat der Krähenbeißer gebissen!"/>
-          {{- end }}
+          <img src="{{ .Site.Params.errorimg }}" alt="Diese Seite hat der Krähenbeißer gebissen!"/>
       {{- end }}
     </main>
     {{ partial "scripts.html" . }}
