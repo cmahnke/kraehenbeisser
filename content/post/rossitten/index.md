@@ -13,20 +13,24 @@ geojson:
   - 55.1575512
   - 20.8416522
 resources:
-- name: featuredImage
-  src: "front.jpeg"
+- src: "front.jpg"
+  name: front
   params:
-    description: "Buchdeckel"
-- name: titleImage
-  src: "title.jpeg"
+    iiif: front/info.json
+    class: featured
+    featured: true
+- src: "title.jpg"
+  name: title
   params:
-    description: "Titelseite"
-- src: "page033/info.json"
-- src: "page034/info.json"
-- name: iiif-manifest-:counter
+    iiif: title/info.json
+    class: featured
+    featured: true
+- src: "page033.jpg"
   params:
-    tify: true
-  src: '**.json'
+    iiif: page033/info.json
+- src: "page034.jpg"
+  params:
+    iiif: page034/info.json
 ---
 # Beschreibung
 

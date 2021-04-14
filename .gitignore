@@ -1,3 +1,5 @@
+package.json
+patches
 public
 docs
 node_modules/
@@ -7,3 +9,6 @@ content/post/kurische-nehrung/kurische-nehrung*/**
 content/post/rossitten/rossitten*/**
 static/images/favicon*.*
 content/post/*/page*/*
+static/images/kraehenbeisser.svg
+content/post/*/title/
+content/post/*/front/*

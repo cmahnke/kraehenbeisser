@@ -20,5 +20,10 @@ fi
 SOURCE="Source Files/Hintergrund/Raben/Favicon.psd[2]" ./themes/projektemacher-base/scripts/favicon.sh
 
 #NPM dependencies
-yarn install
+echo "Calling theme scripts"
+for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
+    echo "Running $SCRIPT"
+    bash "$SCRIPT"
+done
+
 yarn run svgo

@@ -39,7 +39,7 @@
 
   {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
   {{ $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" false }}
-  {{ $iiifViewer := resources.Get "js/iiif-viewer.js" | js.Build $opts }}
+  {{ $iiifViewer := resources.Get "js/iiif-image-viewer.js" | js.Build $opts }}
 
   {{ $js := slice $iiifViewer | resources.Concat "js/concated.js" | minify | fingerprint }}
   <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
@@ -47,6 +47,6 @@
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
-  {{ template "_internal/google_analytics.html" . }}
   {{ hugo.Generator }}
+  {{ partial "html/build-time.html" . }}
 </head>

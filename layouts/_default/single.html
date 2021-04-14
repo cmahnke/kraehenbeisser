@@ -1,3 +1,5 @@
+{{- $context := path.Dir .File.Path -}}
+{{- $page := .Page -}}
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" dir="ltr">
   {{ partial "head.html" . }}
@@ -14,7 +16,7 @@
         <header class="post-header">
           <h1 class="post-title">{{ .Title }}</h1>
         </header>
-        {{ with .Resources.GetMatch "featuredImage" -}}
+        {{ with .Resources.GetMatch "front" -}}
         <div class="image-header">
         <figure class="post front">
           {{ with $.Resources.GetMatch (replace (.Title) (path.Ext (.Title)) ".webp") -}}
@@ -26,7 +28,7 @@
           <figcaption>Volle Auflösung <a href="{{.Permalink}}">herunterladen</a></figcaption>
         </figure>
         {{- end }}
-        {{ with .Resources.GetMatch "titleImage" -}}
+        {{ with .Resources.GetMatch "title" -}}
         <figure class="post title">
           {{ with $.Resources.GetMatch (replace (.Title) (path.Ext (.Title)) ".webp") -}}
           <source srcset="{{ .Permalink }}" type="image/webp">
@@ -48,9 +50,14 @@
         <div class="content-text">
           {{ .Content }}
         </div>
-        {{ partial "iiif-image.html" . }}
+
+        {{- range .Params.resources -}}
+          {{- if and (and (ne .name "front") (ne .name "title")) (ne .name "cover") -}}
+            {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
+          {{- end -}}
+        {{- end -}}
+
       </article>
-      {{ template "_internal/disqus.html" . }}
     </main>
     <nav class="end-nav side-padding">
       {{ with .PrevInSection }}

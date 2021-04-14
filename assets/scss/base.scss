@@ -1,6 +1,7 @@
 @import "normalize";
 @import "style";
 @import "ol-iiif.scss";
+@import "share.scss";
 @import "fonts/ds-behrensschrift";
 @import "fonts/nunito-sans";
 
@@ -231,18 +232,4 @@ main.about {
 
     }
 
-}
-
-/* For IIIF */
-
-.share {
-    text-align: end;
-    font-size: small;
-    line-height: normal;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-
-    a {
-        text-decoration: none;
-    }
 }

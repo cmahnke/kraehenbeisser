@@ -1,5 +1,5 @@
 baseURL = "https://krähenbeisser.de/"
-languageCode = "de-de"
+languageCode = "de"
 defaultContentLanguage = "de"
 title = "Krähenbeißer"
 theme = ["projektemacher-base", "aether"]
