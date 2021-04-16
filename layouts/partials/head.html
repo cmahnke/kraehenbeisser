@@ -21,9 +21,6 @@
   {{ if (fileExists "static/safari-pinned-tab.svg") -}}
     <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | absURL }}" color="#5bbad5">
   {{ end -}}
-  {{ if (fileExists "layouts/partials/meta-tags.html") -}}
-    {{ partial "meta-tags.html" . }}
-  {{ end -}}
 
     {{/* SCSS */}}
     {{- $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "assets/css" "node_modules/normalize.css" "node_modules/ol")) -}}

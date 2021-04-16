@@ -8,6 +8,7 @@ publishDir = "docs"
 canonifyurls = true
 #paginate = 3
 description = "Historische Abbildungen von Krähenbeißern"
+copyright = "Krähenbeißer"
 
 [params]
   brand = "Krähenbeißer"
@@ -19,6 +20,7 @@ description = "Historische Abbildungen von Krähenbeißern"
   keywords = "Krähenbeißer, Krajebieter, Kurische Nehrung, Kurisches Haff, Curonian Lagoon, Curonian Spit"
   stylesheets = []
   copyrightYears = "MMXXI"
+  cc = false
 
 [mediaTypes]
   [mediaTypes."application/json"]
