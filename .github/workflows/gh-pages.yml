@@ -21,6 +21,10 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           logout: false
 
+      - name: Install required dependencies
+        run: |
+          ./themes/projektemacher-base/scripts/github/setup-dependendies.sh
+
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -40,8 +44,13 @@ jobs:
         with:
           hugo-version: '0.82.0'
           extended: true
+
       - name: Build Hugo site
         run: hugo --i18n-warnings
+
+      - name: Validate JSON
+        run: |
+          yarn run validate
 
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3

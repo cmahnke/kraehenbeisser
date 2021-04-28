@@ -27,7 +27,7 @@ copyright = "Krähenbeißer"
     suffixes = ["geojson", "gjson"]
 
 [outputFormats]
-  [outputFormats.GEOJSON]
+  [outputFormats.geojson]
     mediaType = "application/json"
     isPlainText = true
     isHTML = false

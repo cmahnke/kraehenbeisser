@@ -1,0 +1,10 @@
+# Kartenmaterial
+
+Eine Bounding box lässt sich [hier](https://boundingbox.klokantech.com/) bestimmen, alternativ geht es auch mit [Openstreetmap](https://www.openstreetmap.org/export) direkt.
+Für dieses Blog ist eine Bounding Box mit den Koordinaten 20.42,54.87,21.42,55.75 interessant.
+
+## Overpass export
+https://overpass-api.de/api/map?bbox=20.4200,54.8700,21.3500,55.7500
+
+## Konvertierung
+Inspiriert von [diesem Artikel](https://jimmyrocks.io/writings/Loading-Custom-OpenStreetMap-Data-into-OpenMapTiles/)
