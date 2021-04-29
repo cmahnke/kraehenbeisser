@@ -22,17 +22,7 @@
     <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | absURL }}" color="#5bbad5">
   {{ end -}}
 
-    {{/* SCSS */}}
-    {{- $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "assets/css" "node_modules/normalize.css" "node_modules/ol")) -}}
-    {{- $ourTemplate := resources.Get "scss/base.scss" -}}
-    {{- $ourStyle := $ourTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options -}}
-    {{- $style := slice $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint -}}
-    <link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.Integrity }}">
-
-  {{/* External Styles - Fonts etc */}}
-  {{ range .Site.Params.stylesheets -}}
-    <link href="{{ . }}" rel="stylesheet">
-  {{- end -}}
+    {{- partial "html/head/style.html" (dict "context" . "includes" (slice "assets/css")) -}}
 
   {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
   {{ $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" false }}
