@@ -23,13 +23,7 @@
   {{ end -}}
 
     {{- partial "html/head/style.html" (dict "context" . "includes" (slice "assets/css")) -}}
-
-  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
-  {{ $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" false }}
-  {{ $iiifViewer := resources.Get "js/iiif-image-viewer.js" | js.Build $opts }}
-
-  {{ $js := slice $iiifViewer | resources.Concat "js/concated.js" | minify | fingerprint }}
-  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{- partial "html/head/script.html" (dict "js" "js/core.js" ) -}}
 
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

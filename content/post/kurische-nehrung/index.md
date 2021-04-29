@@ -4,6 +4,7 @@ description: "Brust, Alfred, 1930. Die Kurische Nehrung: Eine Monographie in Bil
 date: 2020-07-29T10:22:44+02:00
 draft: false
 displayInMenu: false
+iiifContext: http://iiif.io/api/image/2/context.json
 displayInList: true
 categories: ["Buch"]
 dropCap: false

@@ -4,6 +4,7 @@ description: "Thienemann, Johannes, 1938. Rossitten: 3 Jahrzehnte auf der Kurisc
 date: 2020-07-28T16:51:27+02:00
 draft: false
 displayInMenu: false
+iiifContext: http://iiif.io/api/image/2/context.json
 displayInList: true
 categories: ["Buch"]
 toc: false
