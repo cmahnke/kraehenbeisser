@@ -11,8 +11,8 @@ toc: false
 dropCap: false
 geojson:
   coordinates:
-  - 55.1575512
   - 20.8416522
+  - 55.1575512
 resources:
 - src: "front.jpg"
   name: front
