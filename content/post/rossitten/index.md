@@ -32,6 +32,7 @@ resources:
 - src: "page034.jpg"
   params:
     iiif: page034/info.json
+    preview: true
 ---
 # Beschreibung
 

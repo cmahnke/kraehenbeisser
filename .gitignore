@@ -12,3 +12,5 @@ content/post/*/page*/*
 static/images/kraehenbeisser.svg
 content/post/*/title/
 content/post/*/front/*
+content/**/ogPreview.*g
+content/**/ogPreview-overlay.*g

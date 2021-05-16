@@ -10,18 +10,6 @@ canonifyurls = true
 description = "Historische Abbildungen von Krähenbeißern"
 copyright = "Krähenbeißer"
 
-[params]
-  brand = "Krähenbeißer"
-  #brand_logo = "images/kraehenbeisser.svg"
-  description = "Historische Abbildungen von Krähenbeißern"
-  errorimg = "/images/kraehenbeisser.svg"
-  rssinmenu = true
-  author = "Christian Mahnke"
-  keywords = "Krähenbeißer, Krajebieter, Kurische Nehrung, Kurisches Haff, Curonian Lagoon, Curonian Spit"
-  stylesheets = []
-  copyrightYears = "MMXXI"
-  cc = false
-
 [mediaTypes]
   [mediaTypes."application/json"]
     suffixes = ["geojson", "gjson"]

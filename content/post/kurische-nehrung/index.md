@@ -33,6 +33,7 @@ resources:
   params:
     iiif: page060/info.json
     rotate: 90
+    preview: true
 ---
 # Beschreibung
 

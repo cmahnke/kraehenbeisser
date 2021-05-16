@@ -1,4 +1,5 @@
 ---
+title: Alle Beiträge
 displayinlist: false
 metaPage: true
 outputs:
