@@ -30,7 +30,7 @@
 
     {{- $background := $images.Get "preview" -}}
 
-    {{- if ne $background nil -}}
+    {{- if and (ne $background nil) (ne $overlayImg nil) -}}
         {{- $overlayFilter := images.Overlay $overlayImg 1 1 -}}
         {{- $previewImg = ($background | images.Filter $overlayFilter) -}}
     {{- end -}}
