@@ -67,7 +67,7 @@
 <!--
     <image id="site-logo" style="filter:url(#filter4459)" xlink:href="../../static/svg/Krähenbeißer.svg" preserveAspectRatio="xMidYMid meet" width="67.7726" height="100" x="100" y="50"/>
 -->
-    <image id="logo" style="filter:url(#filter4459)" xlink:href="../../themes/projektemacher-base/static/images/cm.svg" preserveAspectRatio="xMidYMid meet" width="100" height="100" x="1000" y="50"/>
+    <image id="logo" style="filter:url(#filter4459)" xlink:href="../../themes/projektemacher-base/static/images/cm.svg" preserveAspectRatio="xMidYMid meet" width="97.251564" height="100" x="1000" y="50"/>
     <!--
     <image id="preview-image" xlink:href="../../content/post/kurische-nehrung/front.jpg" y="50" x="100" style="image-rendering:optimizeQuality" preserveAspectRatio="xMidYMid meet" height="400" width="1000"/>
     -->
