@@ -15,8 +15,8 @@
     {{- warnf "Can't find image %s for post %s" $imgLocation $context -}}
 {{- end -}}
 
-    <picture>
-      {{ $thumbnail := $previewImg.Fit "400x300 Lanczos" }}
-      <source srcset="{{ $thumbnail.Permalink }}">
-      <img src="{{ $thumbnail.Permalink }}" class="card-img" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
-    </picture>
+<picture>
+    {{ $thumbnail := $previewImg.Fit "400x300 Lanczos" }}
+    <source srcset="{{ $thumbnail.Permalink }}">
+    <img src="{{ $thumbnail.Permalink }}" class="card-img" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
+</picture>
