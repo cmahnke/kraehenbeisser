@@ -34,9 +34,9 @@ jobs:
           ./themes/projektemacher-base/scripts/github/docker-images.sh
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3.4.1
+        uses: actions/setup-node@v3.5.0
         with:
-          node-version: lts/fermium
+          node-version-file: '.nvmrc'
 
       - name: Create IIIF derivates
         run: docker run -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest sh -c "cd ${PWD} && ./scripts/iiif.sh"
