@@ -6,6 +6,7 @@ node_modules/
 assets/images/kraehenbeisser.svg
 resources
 .hugo_build.lock
+hugo_stats.json
 content/post/kurische-nehrung/kurische-nehrung*/**
 content/post/rossitten/rossitten*/**
 static/images/favicon*.*
