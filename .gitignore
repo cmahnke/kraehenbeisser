@@ -17,3 +17,4 @@ content/post/*/title/
 content/post/*/front/*
 content/**/ogPreview.*g
 content/**/ogPreview-overlay.*g
+**/.DS_Store
