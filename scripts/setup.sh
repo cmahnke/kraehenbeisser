@@ -19,6 +19,8 @@ fi
 
 SOURCE="Source Files/Hintergrund/Raben/Favicon.psd[2]" ./themes/projektemacher-base/scripts/favicon.sh
 
+$PWD/themes/projektemacher-base/scripts/init/local-dependencies.sh
+
 # Generate Previews
 python3 ./themes/projektemacher-base/scripts/preview.py
 find content -name ogPreview-overlay.svg -print -exec bash -c 'inkscape "{}" --export-filename=$(dirname "{}")/$(basename -s .svg "{}").png' \;
