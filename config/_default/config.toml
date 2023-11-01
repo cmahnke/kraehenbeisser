@@ -9,6 +9,7 @@
     stylesheets = []
     copyrightYears = "MMXXI - MMXXIII"
     cc = false
+    disableScale = true
 
     [params.preview]
         outputPrefix = "ogPreview-overlay"
