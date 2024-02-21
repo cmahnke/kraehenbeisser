@@ -57,9 +57,5 @@ copyright = "Krähenbeißer"
     target = "assets/scss"
 
   [[module.mounts]]
-    source = "assets/css"
-    target = "assets/css"
-
-  [[module.mounts]]
     source = "assets/images"
     target = "assets/images"
