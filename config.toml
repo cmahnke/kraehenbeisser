@@ -9,6 +9,7 @@ canonifyurls = true
 #paginate = 3
 description = "Historische Abbildungen von Krähenbeißern"
 copyright = "Krähenbeißer"
+enableGitInfo = true
 
 [mediaTypes]
   [mediaTypes."application/json"]
