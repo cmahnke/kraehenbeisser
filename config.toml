@@ -62,3 +62,6 @@ copyright = "Krähenbeißer"
   [[module.mounts]]
     source = "assets/images"
     target = "assets/images"
+
+[build]
+  writeStats = true
