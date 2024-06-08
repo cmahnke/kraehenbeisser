@@ -1,6 +1,7 @@
 @import "normalize";
 /* TODO: Check why this is needed, this used to be just "@import "style";"  */
 @import "../css/style";
+/*@import "ol";*/
 @import "ol-iiif";
 @import "share";
 @import "footer";
@@ -235,4 +236,9 @@ main.about {
             }
         }
     }
+}
+
+p.small {
+    font-size: smaller;
+    text-align: end;
 }
