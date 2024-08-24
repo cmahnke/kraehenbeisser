@@ -7,7 +7,7 @@
 {{- $images := newScratch -}}
 {{- if isset .context.Site.Params "preview" -}}
     {{- $previewImgName := $context.Site.Params.preview.outputPrefix -}}
-    {{- if ne $context.Sites.First .context.Site -}}
+    {{- if ne $context.Sites.Default .context.Site -}}
         {{- $previewImgName = printf "%s.%s%s" $previewImgName $context.Site.Language.Lang $context.Site.Params.preview.outputSuffix -}}
     {{- else -}}
         {{- $previewImgName = printf "%s%s" $previewImgName $context.Site.Params.preview.outputSuffix -}}
