@@ -6,6 +6,9 @@ draft: false
 displayInMenu: false
 iiifContext: http://iiif.io/api/image/2/context.json
 displayInList: true
+outputs:
+- html
+- iiif-manifest
 categories: ["Buch"]
 dropCap: false
 geojson:
