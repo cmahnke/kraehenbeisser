@@ -1,0 +1,56 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://kr%C3%A4henbeisser.de/collection.json",
+  "type": "Collection",
+  "label": {
+      "de": [
+        "Krähenbeißer"
+      ]},
+  "items": [{
+        "id": "https://kr%C3%A4henbeisser.de/post/kurische-nehrung/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://kr%C3%A4henbeisser.de/post/kurische-nehrung/front_hu14640148937628799846.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 432,
+    "width": 300
+  },{
+        "id": "https://kr%C3%A4henbeisser.de/post/kurische-nehrung/front.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 3069,
+        "width": 2133,
+        "service": [{
+          "id":"https://kr%C3%A4henbeisser.de/post/kurische-nehrung/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Die Kurische Nehrung"
+          ]}
+      },{
+        "id": "https://kr%C3%A4henbeisser.de/post/rossitten/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://kr%C3%A4henbeisser.de/post/rossitten/front_hu18092206481901811719.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 410,
+    "width": 300
+  },{
+        "id": "https://kr%C3%A4henbeisser.de/post/rossitten/front.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 2508,
+        "width": 1835,
+        "service": [{
+          "id":"https://kr%C3%A4henbeisser.de/post/rossitten/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Rossitten"
+          ]}
+      }]
+}
