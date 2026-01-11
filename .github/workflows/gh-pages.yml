@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  HUGO_VERSION: 0.154.34
+  HUGO_VERSION: 0.154.4
   PYTHON_VERSION: '3.12'
 
 jobs:
