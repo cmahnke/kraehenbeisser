@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meta - Krähenbeißer</title>
+    <link>https://kr%C3%A4henbeisser.de/meta/</link>
+    <description>Recent content in Meta on Krähenbeißer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
+    <copyright>Krähenbeißer</copyright>
+    
+        <atom:link href="https://kr%C3%A4henbeisser.de/meta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
