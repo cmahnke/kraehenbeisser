@@ -32,4 +32,4 @@ for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
     bash "$SCRIPT"
 done
 
-yarn run svgo
+npm run svgo
