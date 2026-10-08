@@ -22,3 +22,6 @@ content/**/ogPreview-overlay.*g
 assets/css/fonts
 static/fonts
 data/stats.json
+
+assets/scss/flags/
+assets/scss/npm-fonts/

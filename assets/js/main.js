@@ -1,6 +1,5 @@
 require('./iiif-image-viewer');
-//require('./core.js')();
-// Content of themes/aether/assets/js/core.js
+
 function cardPressed() {
     this.classList.add('card-hover');
 }
