@@ -2,7 +2,9 @@
  * Copied from:    https://github.com/josephhutch/aether
  * Original file:  assets/css/style.css
  * Source commit:  c0c315882e286fc30c484f55d5d207994bed89bb
- * Local changes:  renamed to SCSS partial, stylelint disabled (vendored code)
+ * Local changes:  renamed to SCSS partial, stylelint disabled (vendored code);
+ *                 menu converted to no-JS checkbox pattern; focus-visible,
+ *                 contrast and reduced-motion fixes
  *
  * MIT License
  *
@@ -73,20 +75,36 @@ strong {
     -webkit-user-select: none;
     user-select: none;
 }
-.hamburger-menu button {
+.hamburger-menu button,
+.hamburger-menu .hamburger-menu-button {
     display: block;
     position: relative;
     width: 33px;
     height: 33px;
     padding: 0px;
     border: 0px;
-    outline: none;
     background-color: transparent;
     z-index: 500; /* and place it over the hamburger */
     -webkit-touch-callout: none;
     cursor: pointer;
 }
-.hamburger-menu button span {
+/* The checkbox is the invisible but focusable control; the label is the visual hamburger */
+.hamburger-menu .menu-toggle {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 500;
+}
+.hamburger-menu button:focus-visible,
+.hamburger-menu .menu-toggle:focus-visible ~ .hamburger-menu-button {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+.hamburger-menu button span,
+.hamburger-menu .hamburger-menu-button span {
     display: block;
     width: 33px;
     height: 4px;
@@ -97,14 +115,15 @@ strong {
     transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
                 background-color 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-.hamburger-menu button span:first-of-type {
+.hamburger-menu button span:first-of-type,
+.hamburger-menu .hamburger-menu-button span:first-of-type {
     margin-bottom: 5px;
 }
-.hamburger-menu-open button span {
+.hamburger-menu .menu-toggle:checked ~ .hamburger-menu-button span {
     background-color: white;
     transform: rotate(45deg) translate(3.2px , 3.2px);
 }
-.hamburger-menu-open button span:last-of-type {
+.hamburger-menu .menu-toggle:checked ~ .hamburger-menu-button span:last-of-type {
     transform: rotate(-45deg) translate(3.2px , -3.2px);
 }
 .hamburger-menu-overlay {
@@ -125,7 +144,7 @@ strong {
     opacity: 0;
     transition: visibility 0.2s ease-out, opacity 0.2s ease-out;
 }
-.hamburger-menu-open .hamburger-menu-overlay {
+.hamburger-menu .menu-toggle:checked ~ .hamburger-menu-overlay {
     visibility: visible;
     opacity: 0.9;
 }
@@ -150,7 +169,7 @@ strong {
 }
 .post-date {
     display: block;
-    color: #7a7b7c;
+    color: #6a6b6d;
     font-size: 0.8em;
     margin: 0;
 }
@@ -330,7 +349,7 @@ strong {
     margin: 0 auto 1.5em auto;
 }
 .muted-text {
-    color: #7a7b7c;
+    color: #6a6b6d;
 }
 .katex-display {
     margin: 1.5em 0;
@@ -441,6 +460,12 @@ footer {
         transform: scale(1);
     }
 }
+.card:focus-visible {
+    transform: scale(0.97);
+    box-shadow: 0 0.15rem 0.3rem 0 rgba(0, 0, 0, 0.16), 0 0.15rem 0.3rem -0.04rem rgba(0, 0, 0, 0.23);
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
 /* Medium devices (tablets, ~641px and up) */
 @media only screen and (min-width: 40.063em) {
     body {
@@ -506,5 +531,34 @@ footer {
     }
     code {
         border-radius: 0.2rem;
+    }
+}
+
+/* Skip link: visually hidden until focused */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 1000;
+    padding: 0.5em 1em;
+    color: #141823;
+    background-color: #ecedef;
+    text-decoration: none;
+}
+.skip-link:focus-visible {
+    top: 0;
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
     }
 }

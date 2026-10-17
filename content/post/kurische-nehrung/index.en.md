@@ -38,8 +38,8 @@ resources:
     rotate: 90
     preview: true
 ---
-# Description
+## Description
 
 This book is a collection of short stories, poems and images, the latter making up roughly the last half of the volume. The quality is consistently very good; they are executed in copper intaglio printing. And since the aim of the book is to bring the Curonian Spit closer to the reader, the craft of the Krähenbeißer (crow catchers) is of course not to be missed.
 
-# Illustrations
+## Illustrations

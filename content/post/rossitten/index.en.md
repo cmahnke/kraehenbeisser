@@ -37,8 +37,8 @@ resources:
     iiif: page034/info.json
     preview: true
 ---
-# Description
+## Description
 
 The author, [Prof. Dr. Johannes Thienemann](https://en.wikipedia.org/wiki/Johannes_Thienemann), was the founder of the Vogelwarte Rossitten bird observatory (today: [Rybatschi](https://en.wikipedia.org/wiki/Rybatschi)). There he devoted himself to the study of bird migration. This book, the "Volksausgabe" (popular edition) of the 4th edition, therefore focuses on the bird life of the Curonian Spit. However, the first part is kept more general: alongside the landscape and life in Rossitten and on the Curonian Spit, it also deals with a speciality of the region, the Krähenbeißer (crow catchers).
 
-# Illustrations
+## Illustrations

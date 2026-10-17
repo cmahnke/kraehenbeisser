@@ -1,21 +1,23 @@
-<nav class="nav-bar side-padding">
+<a class="skip-link" href="#main">{{ i18n "skipToContent" }}</a>
+<nav class="nav-bar side-padding" aria-label="{{ i18n "mainNavigation" }}">
   {{ if .Site.Params.brand_logo -}}
         {{ with resources.Get .Site.Params.brand_logo -}}
           <img class="header-logo" src="{{ .Permalink }}" alt="Krähenbeißer Logo"/>
         {{- end }}
   {{- end }}
-  <h1 class="nav-header"><a href="{{ .Site.BaseURL }}" class="nav-text">
+  {{ if .IsHome }}<h1 class="nav-header">{{ else }}<p class="nav-header">{{ end }}<a href="{{ .Site.BaseURL }}" class="nav-text">
     {{- if isset $.Site.Params "brand"}}
       {{- $.Site.Params.brand -}}
     {{ else }}
       {{- $.Site.Title -}}
     {{ end -}}
-  </a></h1>
+  </a>{{ if .IsHome }}</h1>{{ else }}</p>{{ end }}
   <div class="hamburger-menu">
-    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="{{ i18n "mainNavigation" }}" />
+    <label for="menu-toggle" class="hamburger-menu-button" aria-hidden="true">
       <span></span>
       <span></span>
-    </button>
+    </label>
     <ul id="menu" class="hamburger-menu-overlay">
       <li><a href="{{ .Site.BaseURL }}" class="hamburger-menu-overlay-link">Home</a></li>
       {{ range where .Site.Pages "Params.displayinmenu" true -}}

@@ -7,39 +7,40 @@ displayInMenu: true
 displayInList: false
 dropCap: false
 hideDescription: true
+hideEndNav: true
 ---
 
 This page is a collection of historical depictions of Krähenbeißer (crow catchers). For copyright reasons, no more recent reproductions, such as those sometimes found in books about East Prussia or the Curonian Spit, are included.
 
 **Krähenbeisse.de** is a [Projektemacher.org blog](https://projektemacher.org).
 
-# About Krähenbeißer
+## About Krähenbeißer
 
 "Krähenbeißer" was the name given to the fishermen of the Curonian Spit and the Curonian Lagoon who caught crows to pickle them as provisions for the winter.
 In the depictions made available here so far, you can see the baiting of the decoy crows, the waiting in the catching hut, the emptying of the nets and the bite.
 The name "Krähenbeißer" (or in the local dialect: Krajebieter) derives from the fact that the crows were bitten on the skull to kill them.
 
-## Links
+### Links
 
 * [Krähenbeißer in the German Wikipedia](https://de.wikipedia.org/wiki/Kr%C3%A4henbei%C3%9Fer)
 
-## Further reading
+### Further reading
 
 * Tautorat, Hans-Georg, 1994. Rossitten. Nachdruck, 1994 [der Ausg. Hamburg 1978]. Hamburg: Landsmannschaft Ostpreußen
 
-# Todo
+## Todo
 
 As always, there is room for improvement here as well; the following points will be addressed in the future:
 * Historical texts should also be presented
 * More depictions - the Google image search shows that more depictions exist; these should be acquired as analogue originals and digitised.
 
-# My other blogs
+## My other blogs
 
 My other blogs are listed on [Projektemacher.org](https://projektemacher.org/blogs/); the ones not listed there are:
 
 * [Nebeleule](http://nebeleule.de/) - With others, a few posts per week
 
-# Colophon
+## Colophon
 
 This site was generated with [Hugo](https://gohugo.io/). It uses an adapted version of the [Aether](https://github.com/josephhutch/aether) theme. The typefaces used are [DS Behrensschrift](http://www.steffmann.de/wordpress/test-2/) for the headings and [Nunito](https://github.com/googlefonts/nunito) for the other elements.
 
@@ -51,11 +52,11 @@ The post-processing of the digitised material was done with [ScanTailor Advanced
 
 The site is hosted by [GitHub](https://github.com/).
 
-# Privacy policy
+## Privacy policy
 
 The privacy policy is available [here](/privacy).
 
-# Contact
+## Contact
 
 "Krähenbeißer" is a [project](https://projektemacher.org) by **[Christian Mahnke](https://christianmahnke.de/)**.
 

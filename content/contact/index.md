@@ -7,6 +7,7 @@ displayInMenu: true
 displayInList: false
 dropCap: false
 hideDescription: true
+hideEndNav: true
 ---
 "Krähenbeißer" ist ein Projekt von **Christian Mahnke**.
 

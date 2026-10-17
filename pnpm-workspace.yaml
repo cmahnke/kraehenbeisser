@@ -1,3 +1,7 @@
+allowBuilds:
+  canvas: true
+  gl: true
+  puppeteer: true
 blockExoticSubdeps: false
 minimumReleaseAgeExclude:
   - '@projektemacher/tify-plugin-annotorious@0.2.0'

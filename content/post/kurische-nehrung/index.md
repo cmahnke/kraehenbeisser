@@ -38,8 +38,8 @@ resources:
     rotate: 90
     preview: true
 ---
-# Beschreibung
+## Beschreibung
 
 Bei dem vorliegenden Buch handelt es sich um eine Sammlung von Kurzgeschichten, Gedichten und Bildern, wobei letztere ungefähr die letzte Hälfte des Bandes ausmachen. Die Qualität ist durchweg sehr gut, sie sind im Kupfertiefdruck ausgeführt. Und da es ziel des Buches ist, die Kurische Nehrung dem Leser näher zu bringen, darf natürlich auch nicht das Handwerk des Krähenbeißers fehlen.
 
-# Abbildungen
+## Abbildungen
