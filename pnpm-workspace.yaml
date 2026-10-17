@@ -1,1 +1,6 @@
 blockExoticSubdeps: false
+minimumReleaseAgeExclude:
+  - '@projektemacher/tify-plugin-annotorious@0.2.0'
+  - '@projektemacher/tify-plugin-core@0.2.0'
+  - '@projektemacher/tify-plugin-hdr@0.2.0'
+  - '@projektemacher/tify-plugin-musicxml@0.2.0'

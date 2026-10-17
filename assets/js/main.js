@@ -1,4 +1,5 @@
-require('./iiif-image-viewer');
+import 'ts/iiif-image-viewer';
+import 'ts/iframe-consent';
 
 function cardPressed() {
     this.classList.add('card-hover');

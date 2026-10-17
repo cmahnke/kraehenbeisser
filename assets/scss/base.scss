@@ -3,6 +3,7 @@
 @import "../css/style";
 /*@import "ol";*/
 @import "ol-iiif";
+@import "iframe-consent";
 @import "share";
 @import "footer";
 @import "fonts/ds-behrensschrift";
@@ -10,13 +11,13 @@
 
 /* The contents */
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans Variable', sans-serif;
     background: #ecedef url(/images/raben.jpg) repeat;
     background-size: 10%;
 }
 
 strong {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans Variable', sans-serif;
     font-weight: bold;
 }
 

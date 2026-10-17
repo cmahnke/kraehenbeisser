@@ -22,6 +22,7 @@
     <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | absURL }}" color="#5bbad5">
   {{ end -}}
 
+    {{- partialCached "fonts/css.html" . "fonts" -}}
     {{- partial "html/head/style.html" (dict "context" . "includes" (slice "assets/css")) -}}
     {{- partial "html/head/script.html" (dict "context" . "js" "js/core.js" ) -}}
 
