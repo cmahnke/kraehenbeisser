@@ -1,0 +1,25 @@
+# Site-specific i18n keys (override theme keys with the same name)
+# Language switcher
+[switchLanguage]
+other = "Switch language"
+
+# Single page
+[fullResolutionPrefix]
+other = "Full resolution"
+
+[download]
+other = "download"
+
+[contents]
+other = "Contents"
+
+# Post cards
+[nextPost]
+other = "Next article"
+
+# Pagination
+[newerPosts]
+other = "Newer Posts"
+
+[olderPosts]
+other = "Older Posts"

@@ -1,7 +1,7 @@
 {{- $context := path.Dir .File.Path -}}
 {{- $page := .Page -}}
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+<html lang="{{ .Site.Language.LanguageCode }}" dir="ltr">
   {{ partial "head.html" . }}
   <body class="single-body">
     {{ partial "nav-bar.html" . }}
@@ -25,7 +25,7 @@
           {{ $featured := .Resize "400x Lanczos" }}
           <source srcset="{{ $featured.Permalink }}">
           <img src="{{ $featured.Permalink }}" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
-          <figcaption>Volle Auflösung <a href="{{.Permalink}}">herunterladen</a></figcaption>
+          <figcaption>{{ i18n "fullResolutionPrefix" }} <a href="{{.Permalink}}">{{ i18n "download" }}</a></figcaption>
         </figure>
         {{- end }}
         {{ with .Resources.GetMatch "title" -}}
@@ -36,7 +36,7 @@
           {{ $title := .Resize "400x Lanczos" }}
           <source srcset="{{ $title.Permalink }}">
           <img src="{{ $title.Permalink }}" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
-          <figcaption>Volle Auflösung <a href="{{.Permalink}}">herunterladen</a></figcaption>
+          <figcaption>{{ i18n "fullResolutionPrefix" }} <a href="{{.Permalink}}">{{ i18n "download" }}</a></figcaption>
         </figure>
         </div>
         {{- end }}
@@ -44,7 +44,7 @@
           <p class="post-reference">{{ .Description }}</p>
         {{- end }}
         {{ if .Params.toc -}}
-          <h2>Inhalt</h2>
+          <h2>{{ i18n "contents" }}</h2>
           {{ .TableOfContents }}
         {{- end }}
         <div class="content-text">

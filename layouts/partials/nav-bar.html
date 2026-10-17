@@ -29,6 +29,19 @@
       {{ if eq .Site.Params.rssinmenu true -}}
       <li><a href="{{ "/index.xml" | absURL }}" class="hamburger-menu-overlay-link">rss</a></li>
       {{- end }}
+      {{ if hugo.IsMultilingual -}}
+        {{ if .IsTranslated -}}
+          {{- range .Translations -}}
+            <li><a href="{{ .Permalink }}" class="hamburger-menu-overlay-link" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" title="{{ i18n "switchLanguage" }}">{{ .Language.LanguageName }}</a></li>
+          {{- end -}}
+        {{- else -}}
+          {{- range hugo.Sites -}}
+            {{- if ne .Language.Lang $.Site.Language.Lang -}}
+              <li><a href="{{ .Home.Permalink }}" class="hamburger-menu-overlay-link" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" title="{{ i18n "switchLanguage" }}">{{ .Language.LanguageName }}</a></li>
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end }}
     </ul>
   </div>
 </nav>

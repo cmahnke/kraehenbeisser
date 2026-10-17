@@ -97,3 +97,15 @@ enableGitInfo = true
 [security]
   [security.http]
     mediaTypes = ['^application/json$', '^application/json;\s?charset=[uU][tT][fF]-8$', '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$']
+
+[languages]
+  [languages.de]
+    languageCode = 'de'
+    languageName = 'Deutsch'
+    locale = 'de'
+    weight = 1
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    locale = 'en'
+    weight = 2
