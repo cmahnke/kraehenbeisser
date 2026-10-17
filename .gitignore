@@ -21,6 +21,7 @@ content/**/ogPreview-overlay.*g
 **/vips-properties.xml
 assets/css/fonts
 static/fonts
+static/map-styles/
 data/stats.json
 
 assets/scss/flags/

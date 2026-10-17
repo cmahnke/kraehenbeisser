@@ -7,6 +7,7 @@ displayInMenu: true
 displayInList: false
 dropCap: false
 hideDescription: true
+hideEndNav: true
 ---
 
 Auf dieser Seite werden die Orte der Beiträge auf einer Karte angezeigt. Die Kartenanzeige nutzt den externen Dienst [OpenStreetMap](https://www.openstreetmap.org/), daher muss der Nutzung zugestimmt werden.

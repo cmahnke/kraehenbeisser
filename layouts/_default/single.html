@@ -59,11 +59,13 @@
 
       </article>
     </main>
+    {{ if not .Params.hideEndNav }}
     <nav class="end-nav side-padding">
       {{ with .PrevInSection }}
       {{ .Render "li-next" }}
       {{ end }}
     </nav>
+    {{ end }}
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
   </body>
