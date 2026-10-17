@@ -1,6 +1,5 @@
 @import "normalize";
-/* TODO: Check why this is needed, this used to be just "@import "style";"  */
-@import "../css/style";
+@import "aether";
 /*@import "ol";*/
 @import "ol-iiif";
 @import "share";

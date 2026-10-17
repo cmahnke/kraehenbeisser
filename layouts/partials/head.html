@@ -24,7 +24,7 @@
 
     {{- partialCached "fonts/css.html" . "fonts" -}}
     {{- partial "html/head/style.html" (dict "context" . "includes" (slice "assets/css")) -}}
-    {{- partial "html/head/script.html" (dict "context" . "js" "js/core.js" ) -}}
+    {{- partial "html/head/script.html" (dict "context" . "js" "js/aether.js" ) -}}
 
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

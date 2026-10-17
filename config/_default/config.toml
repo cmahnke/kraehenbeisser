@@ -33,3 +33,9 @@
   email = 'mail@christianmahnke.de'
   name = 'Christian Mahnke'
   uri = 'http://www.wikidata.org/entity/Q137668638'
+
+# pnpm >= 12 generates /bin/sh shims in node_modules/.bin, which Hugo's
+# PostCSS integration rejects ("binary postcss is not a Node.js script").
+# The dedupe step is the only PostCSS use in the build, so it is disabled.
+[params.css]
+  dedupe = false
