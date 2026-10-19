@@ -5,12 +5,12 @@
 
 {{- $previewImg := "" -}}
 {{- $images := newScratch -}}
-{{- if isset .context.Site.Params "preview" -}}
-    {{- $previewImgName := $context.Site.Params.preview.outputPrefix -}}
+{{- if isset site.Params "preview" -}}
+    {{- $previewImgName := site.Params.preview.outputPrefix -}}
     {{- if ne hugo.Sites.Default .context.Site -}}
-        {{- $previewImgName = printf "%s.%s%s" $previewImgName $context.Site.Language.Lang $context.Site.Params.preview.outputSuffix -}}
+        {{- $previewImgName = printf "%s.%s%s" $previewImgName site.Language.Lang site.Params.preview.outputSuffix -}}
     {{- else -}}
-        {{- $previewImgName = printf "%s%s" $previewImgName $context.Site.Params.preview.outputSuffix -}}
+        {{- $previewImgName = printf "%s%s" $previewImgName site.Params.preview.outputSuffix -}}
     {{- end -}}
     {{- $overlayImg := ($context.Resources.ByType "image").GetMatch $previewImgName -}}
 

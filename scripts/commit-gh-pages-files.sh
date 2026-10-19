@@ -11,8 +11,8 @@ iiif_static.py  -d ../../content/post/kurische-nehrung kurische-nehrung-58.jpeg 
 cd "$WD"
 
 # NPM dependencies
-yarn install
-yarn run svgo build
+npm install --no-audit
+npm run svgo build
 cd docs && git add --all && git commit -m "Publishing to gh-pages" && cd ..
 
 echo "Run 'git push --all' to publish the site"

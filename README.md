@@ -1,7 +1,7 @@
 # Requirements
 
 * [Git](https://git-scm.com/) with [Git Large File Storage (LFS)](https://git-lfs.github.com/)
-* [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/)
+* [NodeJS](https://nodejs.org/en/)
 * [Hugo](https://gohugo.io/) (make sure you have the `extended` build)
 * [libvips](https://github.com/libvips/libvips) - at least version 8.10.2
 
@@ -10,7 +10,7 @@
 ## Getting JavaScript dependencies
 
 ````
-yarn install
+npm install
 ````
 
 ## Generating the site and publishing
@@ -25,12 +25,12 @@ Just run the following script:
 
 You can use [`svgo`](https://github.com/svg/svgo) to optimize SVG files exported by [Inkscape](https://inkscape.org/) to reduce the file size.
 
-### Run `svgo` by `yarn`
+### Run `svgo` via npm
 
-`svgo` is also part of the Node infrastucture, which can be started by `yarn`:
+`svgo` is also part of the Node infrastructure:
 
 ````
-yarn run svgo
+npm run svgo
 ````
 
 ## Dumping MARC records

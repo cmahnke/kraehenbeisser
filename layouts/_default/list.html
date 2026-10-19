@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.LanguageCode }}" dir="ltr">
+<html lang="{{ site.Language.LanguageCode }}" dir="ltr">
   {{ partial "head.html" . }}
   <body class="list-body">
     {{ partial "nav-bar.html" . }}
@@ -17,7 +17,7 @@
       {{- end }}
       {{ $pages := .Pages }}
       {{ if .IsHome }}
-      {{ $pages = .Site.RegularPages }}
+      {{ $pages = site.RegularPages }}
       {{ end }}
       {{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
       {{- range $paginator.Pages -}}
