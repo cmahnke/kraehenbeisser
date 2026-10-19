@@ -1,11 +1,11 @@
-@import "normalize";
-@import "aether";
+@use "normalize";
+@use "aether";
 /*@import "ol";*/
-@import "ol-iiif";
-@import "share";
-@import "footer";
-@import "fonts/ds-behrensschrift";
-@import "npm-fonts/nunito-sans";
+@use "ol-iiif";
+@use "share";
+@use "footer";
+@use "fonts/ds-behrensschrift";
+@use "npm-fonts/nunito-sans";
 
 /* The contents */
 body {
