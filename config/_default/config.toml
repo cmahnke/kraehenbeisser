@@ -2,13 +2,12 @@
     brand = "Krähenbeißer"
     #brand_logo = "images/kraehenbeisser.svg"
     description = "Historische Abbildungen von Krähenbeißern"
-    errorimg = "/images/kraehenbeisser.svg"
+    errorimg = "/images/kraehenbeisser-animated.svg?v=2"
     rssinmenu = true
     keywords = "Krähenbeißer, Krajebieter, Kurische Nehrung, Kurisches Haff, Curonian Lagoon, Curonian Spit"
     stylesheets = []
     copyrightYears = "MMXXI - MMXXIII"
     cc = false
-    disableScale = true
     debug = false
     schemaPerson = "https://christianmahnke.de/person.jsonld"
 
