@@ -7,9 +7,7 @@ other = "Switch language"
 [postsNavigation]
 other = "Posts navigation"
 
-# Footer logo image needs an accessible name (override of theme key)
-[projektemacher]
-other = "is a <a href=\"https://projektemacher.org/en/\">Projektemacher</a> blog <a title=\"Christian Mahnke\" class=\"footer-link-cm\" href=\"https://christianmahnke.de/\"><img src=\"/images/cm.svg\" alt=\"Christian Mahnke\" style=\"height: 16px; margin-left: .5rem;\"></a>"
+# Footer logo image needs an accessible name — override dropped, theme ships alt since the npm-fonts theme
 
 # Single page
 [fullResolutionPrefix]

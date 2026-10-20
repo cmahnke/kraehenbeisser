@@ -100,12 +100,10 @@ enableGitInfo = true
 
 [languages]
   [languages.de]
-    languageCode = 'de'
-    languageName = 'Deutsch'
     locale = 'de'
+    label = 'Deutsch'
     weight = 1
   [languages.en]
-    languageCode = 'en'
-    languageName = 'English'
     locale = 'en'
+    label = 'English'
     weight = 2

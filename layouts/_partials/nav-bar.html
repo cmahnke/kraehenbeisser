@@ -34,12 +34,12 @@
       {{ if hugo.IsMultilingual -}}
         {{ if .IsTranslated -}}
           {{- range .Translations -}}
-            <li><a href="{{ .Permalink }}" class="hamburger-menu-overlay-link" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" title="{{ i18n "switchLanguage" }}">{{ .Language.LanguageName }}</a></li>
+            <li><a href="{{ .Permalink }}" class="hamburger-menu-overlay-link" hreflang="{{ .Language.Name }}" lang="{{ .Language.Name }}" title="{{ i18n "switchLanguage" }}">{{ .Language.Label }}</a></li>
           {{- end -}}
         {{- else -}}
           {{- range hugo.Sites -}}
-            {{- if ne .Language.Lang site.Language.Lang -}}
-              <li><a href="{{ .Home.Permalink }}" class="hamburger-menu-overlay-link" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" title="{{ i18n "switchLanguage" }}">{{ .Language.LanguageName }}</a></li>
+            {{- if ne .Language.Name site.Language.Name -}}
+              <li><a href="{{ .Home.Permalink }}" class="hamburger-menu-overlay-link" hreflang="{{ .Language.Name }}" lang="{{ .Language.Name }}" title="{{ i18n "switchLanguage" }}">{{ .Language.Label }}</a></li>
             {{- end -}}
           {{- end -}}
         {{- end -}}
