@@ -107,3 +107,6 @@ enableGitInfo = true
     locale = 'en'
     label = 'English'
     weight = 2
+
+[params.js]
+  format = "esm"
