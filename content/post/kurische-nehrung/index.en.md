@@ -3,18 +3,19 @@ title: "The Curonian Spit"
 description: "Brust, Alfred, 1930. Die Kurische Nehrung: Eine Monographie in Bildern. 1. Auflage, 1.-5. Tausend - Königsberg in Preußen: Gräfe & Unzer"
 date: 2020-07-29T10:22:44+02:00
 draft: false
-displayInMenu: false
-iiifContext: http://iiif.io/api/image/2/context.json
-displayInList: true
+params:
+  displayInMenu: false
+  iiifContext: http://iiif.io/api/image/2/context.json
+  displayInList: true
+  dropCap: false
+  geojson:
+    coordinates:
+    - 20.9595786
+    - 55.2783325
 outputs:
 - html
 - iiif-manifest
 categories: ["Book"]
-dropCap: false
-geojson:
-  coordinates:
-  - 20.9595786
-  - 55.2783325
 resources:
 - src: "front.jpg"
   name: front

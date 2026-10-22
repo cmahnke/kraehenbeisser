@@ -3,11 +3,12 @@ title: "About this blog"
 description: "About this blog"
 date: 2020-07-28T16:51:27+02:00
 draft: false
-displayInMenu: true
-displayInList: false
-dropCap: false
-hideDescription: true
-hideEndNav: true
+params:
+  displayInMenu: true
+  displayInList: false
+  dropCap: false
+  hideDescription: true
+  hideEndNav: true
 ---
 
 This page is a collection of historical depictions of Krähenbeißer (crow catchers). For copyright reasons, no more recent reproductions, such as those sometimes found in books about East Prussia or the Curonian Spit, are included.

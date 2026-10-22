@@ -3,11 +3,12 @@ title: "Über dieses Blog"
 description: "Über dieses Blog"
 date: 2020-07-28T16:51:27+02:00
 draft: false
-displayInMenu: true
-displayInList: false
-dropCap: false
-hideDescription: true
-hideEndNav: true
+params:
+  displayInMenu: true
+  displayInList: false
+  dropCap: false
+  hideDescription: true
+  hideEndNav: true
 ---
 
 Diese Seite ist eine Sammlung historischer Abbildungen von Krähenbeißern, aus Gründen des Urheberrechtes werden dabei keine neueren Reproduktionen, wie sie manchmal in Büchern über Ostpreußen oder die Kurische Nehrung zu finden sind, aufgenommen.

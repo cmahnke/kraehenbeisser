@@ -3,19 +3,20 @@ title: "Rossitten"
 description: "Thienemann, Johannes, 1938. Rossitten: 3 Jahrzehnte auf der Kurischen Nehrung. Volksausgabe - Neudamm: Neumann"
 date: 2020-07-28T16:51:27+02:00
 draft: false
-displayInMenu: false
-iiifContext: http://iiif.io/api/image/2/context.json
-displayInList: true
+params:
+  displayInMenu: false
+  iiifContext: http://iiif.io/api/image/2/context.json
+  displayInList: true
+  toc: false
+  dropCap: false
+  geojson:
+    coordinates:
+    - 20.8416522
+    - 55.1575512
 categories: ["Book"]
 outputs:
 - html
 - iiif-manifest
-toc: false
-dropCap: false
-geojson:
-  coordinates:
-  - 20.8416522
-  - 55.1575512
 resources:
 - src: "front.jpg"
   name: front

@@ -1,7 +1,8 @@
 ---
 title: All posts
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 outputs:
 - html
 - geojson

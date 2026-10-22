@@ -3,11 +3,12 @@ title: "Kontakt"
 description: "Kontakt"
 date: 2020-07-28T16:51:27+02:00
 draft: false
-displayInMenu: true
-displayInList: false
-dropCap: false
-hideDescription: true
-hideEndNav: true
+params:
+  displayInMenu: true
+  displayInList: false
+  dropCap: false
+  hideDescription: true
+  hideEndNav: true
 ---
 "Krähenbeißer" ist ein Projekt von **Christian Mahnke**.
 

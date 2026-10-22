@@ -3,11 +3,12 @@ title: "Map"
 description: "Map of the Curonian Spit"
 date: 2020-07-28T16:51:27+02:00
 draft: false
-displayInMenu: true
-displayInList: false
-dropCap: false
-hideDescription: true
-hideEndNav: true
+params:
+  displayInMenu: true
+  displayInList: false
+  dropCap: false
+  hideDescription: true
+  hideEndNav: true
 ---
 
 On this page, the locations of the posts are displayed on a map. The map display uses the external service [OpenStreetMap](https://www.openstreetmap.org/), so consent is required for its use.
