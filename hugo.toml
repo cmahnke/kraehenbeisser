@@ -10,6 +10,8 @@ canonifyURLs = true
 copyright = "Krähenbeißer"
 enableGitInfo = true
 
+enableRobotsTXT = true
+
 [mediaTypes]
   [mediaTypes."application/json"]
     suffixes = ["geojson", "gjson"]
@@ -113,3 +115,6 @@ enableGitInfo = true
 
 [params.js]
   format = "esm"
+
+[params.robots]
+  llmsTXT = true
