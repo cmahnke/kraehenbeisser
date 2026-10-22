@@ -91,6 +91,10 @@ enableGitInfo = true
     source = "assets/images"
     target = "assets/images"
 
+  [[module.mounts]]
+    source = "assets/ts"
+    target = "assets/ts"
+
 [build]
   writeStats = true
 
