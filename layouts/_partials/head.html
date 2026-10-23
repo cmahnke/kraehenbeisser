@@ -29,5 +29,7 @@
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{ end -}}
+  {{/* Webmention/pingback endpoint advertisement - see the theme's 'services/webmentions/README.md' */}}
+  {{- partialCached "html/head/webmention.html" . "webmentions" -}}
   {{- partial "metadata/schema.org/schema.org.html" . -}}
 </head>
