@@ -1,0 +1,15 @@
+User-agent: *
+
+Disallow: /privacy/
+
+
+Disallow: /*.bib$
+
+Disallow: /*.json$
+
+Disallow: /*.xml$
+
+Sitemap: https://kr%C3%A4henbeisser.de/sitemap.xml
+
+
+llms-txt: https://kr%C3%A4henbeisser.de/llms.txt
