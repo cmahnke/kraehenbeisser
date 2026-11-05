@@ -24,7 +24,7 @@
           {{- end }}
           {{ $featured := .Resize "400x Lanczos" }}
           <source srcset="{{ $featured.Permalink }}">
-          <img src="{{ $featured.Permalink }}" alt="{{ with .Description }}{{ . }}{{ else }}{{ $.Title }}{{ end }}">
+          <img src="{{ $featured.Permalink }}" alt="{{ with .Params.description }}{{ . }}{{ else }}{{ $.Title }}{{ end }}">
           <figcaption>{{ i18n "fullResolutionPrefix" }} <a href="{{.Permalink}}">{{ i18n "download" }}</a></figcaption>
         </figure>
         {{- end }}
@@ -35,7 +35,7 @@
           {{- end }}
           {{ $title := .Resize "400x Lanczos" }}
           <source srcset="{{ $title.Permalink }}">
-          <img src="{{ $title.Permalink }}" alt="{{ with .Description }}{{ . }}{{ else }}{{ $.Title }}{{ end }}">
+          <img src="{{ $title.Permalink }}" alt="{{ with .Params.description }}{{ . }}{{ else }}{{ $.Title }}{{ end }}">
           <figcaption>{{ i18n "fullResolutionPrefix" }} <a href="{{.Permalink}}">{{ i18n "download" }}</a></figcaption>
         </figure>
         </div>
