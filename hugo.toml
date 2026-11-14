@@ -101,7 +101,7 @@ enableRobotsTXT = true
 
 [security]
   [security.http]
-    mediaTypes = ['^application/json$', '^application/json;\s?charset=[uU][tT][fF]-8$', '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$']
+    mediaTypes = ['^application/json$', '^application/json;\s?charset=[uU][tT][fF]-8$', '^application/ld\+json(;.*)?$', '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$']
 
 [languages]
   [languages.de]
