@@ -24,6 +24,7 @@ resources:
     iiif: front/info.json
     class: featured
     featured: true
+    hint: non-paged
 - src: "title.jpg"
   name: title
   params:
@@ -33,9 +34,11 @@ resources:
 - src: "page033.jpg"
   params:
     iiif: page033/info.json
+    label: "Tafel 33"
 - src: "page034.jpg"
   params:
     iiif: page034/info.json
+    label: "Tafel 34"
     preview: true
 ---
 ## Beschreibung

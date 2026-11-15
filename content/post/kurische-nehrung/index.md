@@ -12,6 +12,8 @@ params:
     coordinates:
     - 20.9595786
     - 55.2783325
+iiif:
+  behavior: individuals
 outputs:
 - html
 - iiif-manifest
@@ -29,14 +31,17 @@ resources:
   params:
     iiif: page058/info.json
     rotate: 90
+    label: "S. 58–59"
 - src: "page059.jpg"
   params:
     iiif: page059/info.json
     rotate: 90
+    label: "S. 60–61"
 - src: "page060.jpg"
   params:
     iiif: page060/info.json
     rotate: 90
+    label: "S. 62–63"
     preview: true
 ---
 ## Beschreibung
